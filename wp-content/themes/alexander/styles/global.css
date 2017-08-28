@@ -1,0 +1,39 @@
+.logo a {
+  display: block;
+  width: 12rem;
+  max-width: 100%; }
+
+.logo a svg {
+  width: 100%; }
+
+.logo a svg .cls-1 {
+  fill: #6cc8e9; }
+
+.logo a svg .cls-2 {
+  stroke-width: 0.7px; }
+
+.logo a svg .cls-3 {
+  fill: #fff; }
+
+.logo a svg .cls-2,
+.logo a svg .cls-4 {
+  fill: none;
+  stroke: #fff; }
+
+header .logo {
+  text-align: right; }
+
+header .logo a {
+  display: inline-block; }
+
+.page--banner {
+  position: relative;
+  height: 750px; }
+
+.home--about--section .company--motto {
+  min-height: 450px; }
+
+body {
+  overflow-x: hidden; }
+
+/*# sourceMappingURL=global.css.map */

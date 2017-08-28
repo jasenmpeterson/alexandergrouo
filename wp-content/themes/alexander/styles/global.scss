@@ -1,0 +1,10 @@
+@import "typography";
+@import "component/logo";
+@import "component/header";
+@import "component/page--banner";
+
+@import "pages/home";
+
+body {
+  overflow-x: hidden;
+}
