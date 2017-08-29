@@ -1,0 +1,52 @@
+a.button--default {
+  font-size: .8rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+a.button--default:last-child {
+  margin-top: 30px;
+}
+.button--default span {
+  background-color: $baby--blue;
+  position: relative;
+  padding: .5rem;
+  border: 1px solid rgba(255,255,255,0.2);
+  min-width: 8rem;
+  text-align: center;
+}
+.button--default:hover span {
+  background-color: $dark--gray;
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.button--default span:after {
+  position: absolute;
+  content: '';
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: #47b6e4;
+  -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.button--default:hover span:after {
+  left: 0;
+  width: 100%;
+}
+.button--default .line {
+  width: 45%;
+  background-color: #fff;
+  height: 1px;
+  margin-left: 1rem;
+  -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  opacity: 1;
+}
+.button--default:hover .line {
+  width: 0;
+  opacity: 0;
+}

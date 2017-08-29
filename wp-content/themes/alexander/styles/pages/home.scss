@@ -1,3 +1,31 @@
 .home--about--section .company--motto {
   min-height: 450px;
 }
+.home--page--banner h1 {
+  color: $white;
+}
+.home--company--motto {
+  position: relative;
+}
+.home--company--motto .box {
+  padding-left: 100px;
+}
+.home--company--motto:before,
+.home--company--motto:after {
+  display: block;
+  content: '';
+  position: absolute;
+  background-color: $gun--metal;
+  opacity: 0.2;
+}
+.home--company--motto:before {
+  height: 1px;
+  width: 100%;
+  left: 0;
+  top: 75px;
+}
+.home--company--motto:after {
+  width: 1px;
+  left: 75px;
+  height: 100%;
+}

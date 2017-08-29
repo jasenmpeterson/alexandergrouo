@@ -1,0 +1,24 @@
+.social--media-icons ul li a {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border-radius: 50px;
+  background-color: $baby--blue;
+  display: flex;
+  border: none !important;
+  padding: 0;
+}
+.social--media-icons ul li a svg {
+  width: 100%;
+  fill: $white;
+  transition: all 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+.social--media-icons ul li a:hover {
+  background-color: $white;
+}
+.social--media-icons ul li a:hover svg {
+  fill: $dark--gray;
+}
+.social--media-icons ul li:after {
+  display: none;
+}

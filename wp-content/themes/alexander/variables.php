@@ -29,3 +29,7 @@ $smarty->assign('homeURL', get_bloginfo('url'));
 $smarty->assign('siteTitle', get_bloginfo('name'));
 
 $smarty->assign('currentYear', date('Y'));
+
+$smarty->assign('facebook', get_field('facebook', 'option'));
+$smarty->assign('linkedin', get_field('linkedin', 'option'));
+$smarty->assign('twitter', get_field('twitter', 'option'));

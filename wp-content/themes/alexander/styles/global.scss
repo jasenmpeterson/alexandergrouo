@@ -1,7 +1,57 @@
+// utilities :
+
+// -- box-shadow :
+@import "utilities/box-shadow";
+
+// variables :
+
+// -- colors:
+$dark--gray: #1F242A;
+$dark--blue: #088dc4;
+$baby--blue: #6CC8E9;
+$silver: #D7E2EB;
+$gun--metal: #9A9A9A;
+$white: #FFFFFF;
+
+// background colors :
+.baby--blue {
+  background-color: $baby--blue;
+}
+.baby--blue--gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#58bde7), to(#088dc4));
+  background: linear-gradient(#58bde7 0%, #088dc4 100%);
+  color: $white;
+}
+.dark--gray {
+  background-color: $dark--gray;
+}
+.dark--blue {
+  background-color: $dark--blue;
+}
+.silver {
+  background-color: $silver;
+}
+
+// box shadows :
+.box--shadow--all {
+  @include box-shadow-all('rgba(44,62,80,.5)');
+}
+
+// box :
+.box {
+  padding: 2rem;
+}
+
 @import "typography";
 @import "component/logo";
 @import "component/header";
+@import "component/navigation";
+@import "component/footer";
 @import "component/page--banner";
+@import "component/social--media";
+@import "component/button";
+@import "component/posts";
+@import "component/company--motto";
 
 @import "pages/home";
 

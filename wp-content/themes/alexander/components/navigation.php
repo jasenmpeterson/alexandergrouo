@@ -14,8 +14,8 @@ class navigation {
 
 			'theme_location' => 'primary_menu',
 			'container' => false,
-			'menu_id' => 'desktop',
-			'menu_class' => 'desktop'
+			'menu_id' => '',
+			'menu_class' => 'primary'
 
 		));
 
