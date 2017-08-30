@@ -60,7 +60,11 @@ h4,
 h5,
 h6 {
   line-height: 1;
-  letter-spacing: -1px; }
+  letter-spacing: -1px;
+  margin-bottom: 0.5em; }
+
+h1 ~ p:first-of-type {
+  margin-top: 0; }
 
 .logo a {
   display: block;
@@ -134,6 +138,12 @@ header .logo a {
   top: 0;
   background: rgba(255, 255, 255, 0.4);
   content: ''; }
+
+footer {
+  background-color: #1F242A;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  padding: 25px 0; }
 
 footer .logo a {
   margin: 0 auto;
@@ -246,6 +256,13 @@ a.button--default:last-child {
   width: 0;
   opacity: 0; }
 
+.button--reverse {
+  flex-direction: row-reverse; }
+
+.button--reverse .line {
+  margin-left: 0;
+  margin-right: 1rem; }
+
 .post--list a {
   display: block;
   text-decoration: none;
@@ -264,6 +281,12 @@ a.button--default:last-child {
   background-color: #1F242A;
   color: #088dc4;
   padding: 10px; }
+
+.post--date {
+  display: block;
+  color: #9A9A9A;
+  font-size: .8rem;
+  margin-bottom: 10px; }
 
 .company--motto .box {
   text-align: left;
@@ -307,6 +330,63 @@ a.button--default:last-child {
   width: 1px;
   left: 75px;
   height: 100%; }
+
+.home--expertise--section {
+  height: 750px;
+  background-color: #1F242A;
+  position: relative; }
+
+.home-page-expertise-content .box {
+  color: #FFFFFF;
+  width: 60%; }
+
+.home--expertise--section .page--banner--image--container {
+  height: 100%; }
+
+.home--locations--section h1 {
+  color: #6CC8E9; }
+
+.home--locations--content .box {
+  width: 85%;
+  margin: 0 auto;
+  padding: 100px;
+  color: #9A9A9A; }
+
+.home--locations-list {
+  position: relative;
+  z-index: 2;
+  box-shadow: 15px 0 15px -15px rgba(44,62,80,.5); }
+
+.home--locations-list ul {
+  list-style-type: none;
+  font-size: 1.8rem;
+  margin: 0; }
+
+.home--locations-list ul li {
+  margin-bottom: 0;
+  text-align: right; }
+
+.home--locations--section .page--banner--image--container {
+  left: -10px; }
+
+.home--tag--news {
+  padding: 100px 0; }
+
+.home--tag--news a {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 70%;
+  margin: 0 auto; }
+
+.home--tag--news a:hover {
+  opacity: 0.5;
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+.home--tag--news h1 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  line-height: 1.2; }
 
 body {
   overflow-x: hidden; }

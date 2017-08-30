@@ -20,11 +20,16 @@ $about_link = get_permalink($about_content_id);
 
 $expertise_content_id = get_field('expertise_page_object', $page_id);
 $expertise_content = get_post($expertise_content_id);
+$expertise_link = get_permalink($expertise_content);
+$expertise_image = get_field('expertise_image', $page_id);
 
 $company_motto = get_field('company_motto', $page_id);
 
 $locations_content = get_field('locations_copy', $page_id);
 $locations_list = get_field('locations_list', $page_id);
+$locations_image = get_field('locations_image', $page_id);
+$locations_content_id = get_field('locations_page_object', $page_id);
+$locations_link = get_permalink($locations_content_id);
 
 $post_list_args = array(
 	'post_type' => 'post',
@@ -61,7 +66,11 @@ if( $tag_news_list->have_posts() ) {
 		$tag_news_list_array[get_the_ID()] = array(
 			'link'=> get_permalink(),
 			'title'=> get_the_title(),
-			'content'=> get_the_content()
+			'content'=> get_the_content(),
+			'date'=> get_the_date(),
+			'link_or_media'=> get_field('link_or_media'),
+			'link'=> get_field('link'),
+			'media'=> get_field('file_attachment')
 		);
 	}
 
@@ -80,16 +89,19 @@ $smarty->assign('about_page_image', $about_image);
 $smarty->assign('about_link', $about_link);
 
 $smarty->assign('expertise_content', wpautop($expertise_content->post_content));
+$smarty->assign('expertise_image', $expertise_image);
 
 $smarty->assign('company_motto', $company_motto);
 
 $smarty->assign('posts', $post_list_array);
 $smarty->assign('blog_link', $blog_page_link);
 
-$smarty->assign('tag_news', $tag_news_list);
+$smarty->assign('tag_news', $tag_news_list_array);
 
 $smarty->assign('locations_content', $locations_content);
 $smarty->assign('locations_list', $locations_list);
+$smarty->assign('locations_image', $locations_image);
+$smarty->assign('locations_link', $locations_link);
 
 $smarty->assign('featured_image', $featured_image);
 

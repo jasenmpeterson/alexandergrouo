@@ -50,3 +50,10 @@ a.button--default:last-child {
   width: 0;
   opacity: 0;
 }
+.button--reverse {
+  flex-direction: row-reverse;
+}
+.button--reverse .line {
+  margin-left: 0;
+  margin-right: 1rem;
+}

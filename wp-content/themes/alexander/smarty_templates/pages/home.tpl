@@ -53,38 +53,63 @@
     <div class="col-xs-1 dark--blue"></div>
 </section>
 
-<section class="home--expertise--section row">
-    <div class="col-xs-6">
-
+<section class="home--expertise--section row middle-xs">
+    <div class="col-xs-6 page--banner--image--container">
+        <section class="page--banner--image expertise--page--image" style="background: url({$expertise_image})"></section>
     </div>
-    <div class="col-xs">
-        {$expertise_content}
+    <div class="col-xs home-page-expertise-content">
+        <section class="box">
+            {$expertise_content}
+            <a href="{$exprtise_link}" class="button--default">
+                <span>Read More</span>
+                <div class="line"></div>
+            </a>
+        </section>
     </div>
 </section>
 
 <section class="home--locations--section row">
-    <div class="col-xs-6">
+    <div class="col-xs-4">
         <div class="row">
             <section class="col-xs-12 home--locations--content">
-                {$locations_content}
+                <div class="box">
+                    {$locations_content}
+                </div>
             </section>
         </div>
         <div class="row">
-            <div class="col-xs-1 swatch color-dark background-light-400"></div>
-            <section class="col-xs-4 home--locations-list">
-                <ul>
-                    {foreach $locations_list as $location}
-                        <li>{$location['location']}</li>
-                    {/foreach}
-                </ul>
+            <div class="col-xs-3 silver"></div>
+            <section class="col-xs-9 home--locations-list baby--blue--gradient">
+                <div class="box">
+                    <ul>
+                        {foreach $locations_list as $location}
+                            <li>{$location['location']}</li>
+                        {/foreach}
+                    </ul>
+                    <a href="{$locations_link}" class="button--default button--reverse">
+                        <span>View all our locations</span>
+                        <div class="line"></div>
+                    </a>
+                </div>
             </section>
         </div>
     </div>
-    <div class="col-xs swatch color-dark background-light-400"></div>
+    <div class="col-xs-8 page--banner--image--container">
+        <section class="page--banner--image locations--page--image" style="background: url({$locations_image})"></section>
+    </div>
 </section>
 
 <section class="home--tag--news row">
     {foreach $tag_news as $news}
-
+        <div class="col-xs-4">
+            {if {$news['link_or_media']} === 'Media'}
+                <a href="{$news['media']}" target="_blank">
+                {else}
+                <a href="{$news['link']}" target="_blank">
+            {/if}
+                <span class="post--date">{$news['date']}</span>
+                <h1>{$news['title']}</h1>
+            </a>
+        </div>
     {/foreach}
 </section>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-08-29 15:10:00
+/* Smarty version 3.1.30, created on 2017-08-30 16:37:59
   from "/Users/jasenpeterson/www/alexandergroup/wp-content/themes/alexander/smarty_templates/pages/home.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59a583c89f0059_19887416',
+  'unifunc' => 'content_59a6e9e7251821_62545195',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f70599f5533ec8ea1db764b73616f5224f2d5650' => 
     array (
       0 => '/Users/jasenpeterson/www/alexandergroup/wp-content/themes/alexander/smarty_templates/pages/home.tpl',
-      1 => 1504019390,
+      1 => 1504111072,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59a583c89f0059_19887416 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59a6e9e7251821_62545195 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <section class="home--page--banner page--banner row center-xs middle-xs">
     <section class="page--banner--image" style="background: url(<?php echo $_smarty_tpl->tpl_vars['featured_image']->value;?>
@@ -95,46 +95,66 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
     <div class="col-xs-1 dark--blue"></div>
 </section>
 
-<section class="home--expertise--section row">
-    <div class="col-xs-6">
-
+<section class="home--expertise--section row middle-xs">
+    <div class="col-xs-6 page--banner--image--container">
+        <section class="page--banner--image expertise--page--image" style="background: url(<?php echo $_smarty_tpl->tpl_vars['expertise_image']->value;?>
+)"></section>
     </div>
-    <div class="col-xs">
-        <?php echo $_smarty_tpl->tpl_vars['expertise_content']->value;?>
+    <div class="col-xs home-page-expertise-content">
+        <section class="box">
+            <?php echo $_smarty_tpl->tpl_vars['expertise_content']->value;?>
 
+            <a href="<?php echo $_smarty_tpl->tpl_vars['exprtise_link']->value;?>
+" class="button--default">
+                <span>Read More</span>
+                <div class="line"></div>
+            </a>
+        </section>
     </div>
 </section>
 
 <section class="home--locations--section row">
-    <div class="col-xs-6">
+    <div class="col-xs-4">
         <div class="row">
             <section class="col-xs-12 home--locations--content">
-                <?php echo $_smarty_tpl->tpl_vars['locations_content']->value;?>
+                <div class="box">
+                    <?php echo $_smarty_tpl->tpl_vars['locations_content']->value;?>
 
+                </div>
             </section>
         </div>
         <div class="row">
-            <div class="col-xs-1 swatch color-dark background-light-400"></div>
-            <section class="col-xs-4 home--locations-list">
-                <ul>
-                    <?php
+            <div class="col-xs-3 silver"></div>
+            <section class="col-xs-9 home--locations-list baby--blue--gradient">
+                <div class="box">
+                    <ul>
+                        <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['locations_list']->value, 'location');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['location']->value) {
 ?>
-                        <li><?php echo $_smarty_tpl->tpl_vars['location']->value['location'];?>
+                            <li><?php echo $_smarty_tpl->tpl_vars['location']->value['location'];?>
 </li>
-                    <?php
+                        <?php
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 ?>
 
-                </ul>
+                    </ul>
+                    <a href="<?php echo $_smarty_tpl->tpl_vars['locations_link']->value;?>
+" class="button--default button--reverse">
+                        <span>View all our locations</span>
+                        <div class="line"></div>
+                    </a>
+                </div>
             </section>
         </div>
     </div>
-    <div class="col-xs swatch color-dark background-light-400"></div>
+    <div class="col-xs-8 page--banner--image--container">
+        <section class="page--banner--image locations--page--image" style="background: url(<?php echo $_smarty_tpl->tpl_vars['locations_image']->value;?>
+)"></section>
+    </div>
 </section>
 
 <section class="home--tag--news row">
@@ -143,7 +163,23 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['news']->value) {
 ?>
-
+        <div class="col-xs-4">
+            <?php ob_start();
+echo $_smarty_tpl->tpl_vars['news']->value['link_or_media'];
+$_prefixVariable1=ob_get_clean();
+if ($_prefixVariable1 === 'Media') {?>
+                <a href="<?php echo $_smarty_tpl->tpl_vars['news']->value['media'];?>
+" target="_blank">
+                <?php } else { ?>
+                <a href="<?php echo $_smarty_tpl->tpl_vars['news']->value['link'];?>
+" target="_blank">
+            <?php }?>
+                <span class="post--date"><?php echo $_smarty_tpl->tpl_vars['news']->value['date'];?>
+</span>
+                <h1><?php echo $_smarty_tpl->tpl_vars['news']->value['title'];?>
+</h1>
+            </a>
+        </div>
     <?php
 }
 }

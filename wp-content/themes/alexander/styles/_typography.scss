@@ -37,13 +37,11 @@
   url('../fonts/crimson-text-v7-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
   url('../fonts/crimson-text-v7-latin-700.svg#CrimsonText') format('svg'); /* Legacy iOS */
 }
-
 body {
   font-family: 'Crimson Text', serif;
   font-weight: 400;
   -webkit-font-smoothing: subpixel-antialiased;
 }
-
 h1,
 h2,
 h3,
@@ -52,4 +50,8 @@ h5,
 h6 {
   line-height: 1;
   letter-spacing: -1px;
+  margin-bottom: 0.5em;
+}
+h1 ~ p:first-of-type {
+  margin-top: 0;
 }
