@@ -33,3 +33,7 @@ $smarty->assign('currentYear', date('Y'));
 $smarty->assign('facebook', get_field('facebook', 'option'));
 $smarty->assign('linkedin', get_field('linkedin', 'option'));
 $smarty->assign('twitter', get_field('twitter', 'option'));
+
+$featured_image_src = wp_get_attachment_image_src(get_post_thumbnail_id($page_id), 'full-size');
+$featured_image = $featured_image_src[0];
+$smarty->assign('featured_image', $featured_image);

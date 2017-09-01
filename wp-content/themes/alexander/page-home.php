@@ -77,9 +77,6 @@ if( $tag_news_list->have_posts() ) {
 	wp_reset_postdata();
 };
 
-$featured_image_src = wp_get_attachment_image_src(get_post_thumbnail_id($page_id), 'full-size');
-$featured_image = $featured_image_src[0];
-
 // get page id :
 
 $smarty->assign('content', wpautop($home_content->post_content));
@@ -102,8 +99,6 @@ $smarty->assign('locations_content', $locations_content);
 $smarty->assign('locations_list', $locations_list);
 $smarty->assign('locations_image', $locations_image);
 $smarty->assign('locations_link', $locations_link);
-
-$smarty->assign('featured_image', $featured_image);
 
 $smarty->display(THEME_DIR . '/smarty_templates/pages/home.tpl');
 
