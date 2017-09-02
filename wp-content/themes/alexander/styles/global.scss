@@ -40,6 +40,12 @@ $white: #FFFFFF;
 .box--shadow--all {
   @include box-shadow-all('rgba(44,62,80,.5)');
 }
+.box--shadow--left {
+  @include box-shadow-left('rgba(44,62,80,.5)');
+}
+.box--shadow--bottom {
+  @include box-shadow-bottom('rgba(44,62,80,.5)');
+}
 
 // box :
 .box {

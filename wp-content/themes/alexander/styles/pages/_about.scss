@@ -3,7 +3,6 @@
   height: 500px;
 }
 .our--culture--quote h1 {
-  font-weight: 400;
   font-style: italic;
   margin: 0;
 }
@@ -23,4 +22,42 @@
 }
 .our--culture--content .box p {
   color: $gun--metal;
+}
+.about--us--title h1 {
+  color: $gun--metal;
+  font-weight: 400;
+}
+.about--us--title h1 span {
+  color: $baby--blue;
+}
+.about--us--content h1 {
+  color: $baby--blue;
+}
+.about--us--content p {
+  color: $gun--metal;
+}
+.about--us--title.box,
+.about--us--content.box {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+.row.search-types {
+  margin-left: -100px;
+}
+.search-types h1 {
+  color: $baby--blue;
+}
+.search-types p {
+  color: $white;
+}
+.search-types .box {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.search-types .box:first-of-type {
+  padding-top: 70px;
+}
+.search-types .box:last-of-type {
+  padding-bottom: 70px;
 }
