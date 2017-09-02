@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-08-30 16:37:59
+/* Smarty version 3.1.30, created on 2017-09-02 16:43:25
   from "/Users/jasenpeterson/www/alexandergroup/wp-content/themes/alexander/smarty_templates/pages/home.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59a6e9e7251821_62545195',
+  'unifunc' => 'content_59aadfadc14b93_19645053',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f70599f5533ec8ea1db764b73616f5224f2d5650' => 
     array (
       0 => '/Users/jasenpeterson/www/alexandergroup/wp-content/themes/alexander/smarty_templates/pages/home.tpl',
-      1 => 1504111072,
+      1 => 1504287866,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59a6e9e7251821_62545195 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59aadfadc14b93_19645053 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <section class="home--page--banner page--banner row center-xs middle-xs">
     <section class="page--banner--image" style="background: url(<?php echo $_smarty_tpl->tpl_vars['featured_image']->value;?>

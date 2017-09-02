@@ -1,8 +1,7 @@
 .video--wrapper {
   position: relative;
   width: 100%;
-  height: 56.25vw;
-  padding-top: 56%;
+  height: 500px;
 }
 .video--wrapper iframe {
   position: absolute;
@@ -11,7 +10,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 500px;
   background-color: transparent;
 }
 .video--poster {
@@ -21,7 +20,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 500px;
   margin: 0;
   padding: 0;
   cursor: pointer;
@@ -84,4 +83,11 @@
   -webkit-transition-delay: 0s, 800ms;
   -moz-transition-delay: 0s, 800ms;
   transition-delay: 0s, 800ms;
+}
+.video--wrapper--container {
+  height: 500px;
+  max-width: 100%;
+}
+header ~ .video--wrapper--container {
+  margin-top: 105px;
 }

@@ -12,8 +12,25 @@ get_header();
 global $smarty;
 
 // about us video:
-$about_us_video = get_field('about_page_introduction_video', $page_id, false, false);
+$about_us_video = get_field('about_page_introduction_video', $page_id);
 $smarty->assign('about_us_video', $about_us_video);
+
+// about us layout:
+$about_us_layout = get_field('about_page_introduction', $page_id);
+$smarty->assign('about_us_title', $about_us_layout[0]['title']);
+$smarty->assign('about_us_content', $about_us_layout[0]['content']);
+
+// about us searches:
+$smarty->assign('searches', get_field('search_types', $page_id));
+
+// culture video:
+$about_us_video = get_field('our_culture_video', $page_id);
+
+// our culture layout:
+// about us layout:
+$our_culture_layout = get_field('our_culture', $page_id);
+$smarty->assign('our_culture_quote', $our_culture_layout[0]['quote']);
+$smarty->assign('our_culture_content', $our_culture_layout[0]['content']);
 
 $smarty->display(THEME_DIR . '/smarty_templates/pages/about.tpl');
 

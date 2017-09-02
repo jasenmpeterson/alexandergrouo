@@ -1,0 +1,26 @@
+.our--culture--quote {
+  color: $white;
+  height: 500px;
+}
+.our--culture--quote h1 {
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+}
+.our--culture--quote h1 span {
+  color: $baby--blue;
+}
+.our--culture--quote .dark--gray {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our--culture--content .box {
+  padding: 150px 0;
+}
+.our--culture--content .box h1 {
+  color: $baby--blue;
+}
+.our--culture--content .box p {
+  color: $gun--metal;
+}

@@ -4,6 +4,8 @@
 @import "utilities/box-shadow";
 // -- video-wrapper :
 @import "utilities/video--wrapper";
+// -- key-frames:
+@import "utilities/keyframes";
 
 // variables :
 
@@ -56,6 +58,7 @@ $white: #FFFFFF;
 @import "component/company--motto";
 
 @import "pages/home";
+@import "pages/about";
 
 body {
   overflow-x: hidden;
