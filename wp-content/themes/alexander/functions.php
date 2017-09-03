@@ -69,6 +69,7 @@ $smarty = new Smarty_Base();
 
 function theme_assets()
 {
+	wp_deregister_script('jquery');
     wp_enqueue_script('javascript', THEME_URI . '/javascript/global.js', array(), null, true);
     wp_enqueue_style('turret-css', THEME_URI . '/includes/turretcss.min.css', array(), null);
     wp_enqueue_style('flexbox-grid-css', THEME_URI . '/includes/flexboxgrid.css', array(), null);
@@ -85,6 +86,7 @@ function theme_assets()
         'ajaxurl'  => $ajax_url,
         'noposts'  => esc_html__('No older posts found'),
         'loadmore' => esc_html__('Load more'),
+        'javascriptDirectory' => get_stylesheet_directory_uri() . '/javascript'
     );
 
     wp_localize_script('javascript', 'pageParams', $pageParams);

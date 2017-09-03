@@ -37,3 +37,5 @@ $smarty->assign('twitter', get_field('twitter', 'option'));
 $featured_image_src = wp_get_attachment_image_src(get_post_thumbnail_id($page_id), 'full-size');
 $featured_image = $featured_image_src[0];
 $smarty->assign('featured_image', $featured_image);
+
+$smarty->assign('page_title', get_the_title($page_id));

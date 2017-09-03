@@ -28,23 +28,29 @@ $white: #FFFFFF;
 }
 .dark--gray {
   background-color: $dark--gray;
+  color: $white;
 }
 .dark--blue {
   background-color: $dark--blue;
+  color: $white;
 }
 .silver {
   background-color: $silver;
+  color: $white;
 }
 
 // box shadows :
 .box--shadow--all {
-  @include box-shadow-all('rgba(44,62,80,.5)');
+  @include box-shadow-all('rgba(44,62,80,.3)');
 }
 .box--shadow--left {
   @include box-shadow-left('rgba(44,62,80,.5)');
 }
 .box--shadow--bottom {
   @include box-shadow-bottom('rgba(44,62,80,.5)');
+}
+.box--shadow--left--right {
+  @include box-shadow-left-and-right('rgba(44,62,80,.2)')
 }
 
 // box :
@@ -62,9 +68,11 @@ $white: #FFFFFF;
 @import "component/button";
 @import "component/posts";
 @import "component/company--motto";
+@import "component/ajax";
 
 @import "pages/home";
 @import "pages/about";
+@import "pages/leadership";
 
 body {
   overflow-x: hidden;

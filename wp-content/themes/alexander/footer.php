@@ -19,6 +19,7 @@
 		    <?php get_template_part('components/social_media'); ?>
         </div>
     </footer>
+    <script src="<?php echo THEME_URI ?>/javascript/require.js"></script>
     <?php wp_footer(); ?>
 
     </body>
