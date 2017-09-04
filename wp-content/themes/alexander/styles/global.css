@@ -771,11 +771,29 @@ a.button--default:last-child {
 .expertise--row .final--content--block h2 {
   color: #FFFFFF; }
 
+.expertise--row .final--content--block h2:after {
+  display: block;
+  content: '';
+  background-color: #6CC8E9;
+  margin-top: 30px;
+  width: 110px;
+  height: 3px; }
+
 .expertise--row .final--content--block h2 span {
   color: #6CC8E9; }
 
 .expertise--stat {
-  padding: 200px 0; }
+  padding: 250px 60px;
+  position: relative;
+  color: #FFFFFF; }
+
+.expertise--stat h1 {
+  font-size: 3em; }
+
+.expertise--background--image--wrap {
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  position: relative; }
 
 body {
   overflow-x: hidden; }

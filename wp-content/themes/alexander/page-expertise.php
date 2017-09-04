@@ -18,6 +18,7 @@ $smarty->assign('content_block_two', get_field('content_block_two', $page_id));
 $smarty->assign('content_block_three', get_field('content_block_three', $page_id));
 $smarty->assign('experience_stats', get_field('experience_stats', $page_id));
 $smarty->assign('content_block_image', get_field('content_block_image', $page_id));
+$smarty->assign('expertise_image', get_field('expertise_image', $page_id));
 
 $smarty->display(THEME_DIR . '/smarty_templates/pages/expertise.tpl');
 

@@ -10,7 +10,7 @@
 
 <div class="row expertise--row">
     <div class="col-xs-1 dark--blue"></div>
-    <div class="col-xs-3 baby--blue--gradient expertise--headline">
+    <div class="col-xs-4 baby--blue--gradient expertise--headline">
         <div class="box">
             {$headline}
         </div>
@@ -46,12 +46,12 @@
                     {$content_block_two}
                 </div>
             </div>
-            <div class="col-xs-4">
-                <div class="box expertise--content--block final--content--block">
+            <div class="col-xs-6">
+                <div class="box expertise--content--block final--content--block box--shadow--all">
                     {$content_block_three}
                 </div>
                 <section class="page--banner--image--container">
-                    <section class="content--block--page--banner page--banner--image about--page--image" style="background: url({$content_block_image})"></section>
+                    <section class="content--block--page--banner page--banner--image box--shadow--all" style="background: url({$content_block_image})"></section>
                 </section>
             </div>
         </div>
@@ -59,19 +59,21 @@
     <div class="col-xs-1 silver"></div>
 </div>
 
-<div class="row expertise--stats center-xs">
-    <div class="col-xs-1 dark--blue"></div>
-    <div class="col-xs">
-        <div class="row">
-            {foreach $experience_stats as $experience_stat}
-                <div class="col-xs-4">
-                    <section class="expertise--stat">
-                        <h2>{$experience_stat['label']}</h2>
-                        {$experience_stat['content']}
-                    </section>
-                </div>
-            {/foreach}
+<section class="expertise--background--image--wrap" style="background: url({$expertise_image})">
+    <div class="row expertise--stats center-xs">
+        <div class="col-xs-1 dark--blue"></div>
+        <div class="col-xs">
+            <div class="row">
+                {foreach $experience_stats as $experience_stat}
+                    <div class="col-xs-4">
+                        <section class="expertise--stat">
+                            <h1>{$experience_stat['label']}</h1>
+                            {$experience_stat['content']}
+                        </section>
+                    </div>
+                {/foreach}
+            </div>
         </div>
+        <div class="col-xs-1 silver"></div>
     </div>
-    <div class="col-xs-1 silver"></div>
-</div>
+</section>
