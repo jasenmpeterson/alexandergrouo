@@ -39,7 +39,6 @@ define(['./axios'],function (axios) {
                 })
                 // ajax call:
                 axios.get(url + '/wp-json/wp/v2/team_profiles/'+data_id).then(function (response) {
-                    console.log(response)
                     name.innerHTML = response.data.title.rendered
                     description.innerHTML = response.data.acf.content
                     title.innerHTML = response.data.acf.label

@@ -14,7 +14,7 @@
 }
 
 .nav-inline a:hover,
-.current-menu-item a {
+.nav-inline ul li.current-menu-item a {
   color: $baby--blue;
   border-bottom: 2px dotted $baby--blue;
 }

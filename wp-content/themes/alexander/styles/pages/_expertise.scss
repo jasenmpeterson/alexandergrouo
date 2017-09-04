@@ -1,0 +1,43 @@
+.expertise--page--banner .dark--blue {
+  height: 100%;
+  z-index: 2;
+}
+.expertise--headline {
+  margin-left: 100px;
+  margin-top: -100px;
+  position: relative;
+  z-index: 2;
+}
+.expertise--hero--text h1 {
+  color: $gun--metal;
+}
+.expertise--hero--text h1 span {
+  color: $baby--blue;
+}
+.expertise--content--block h2 {
+   color: $baby--blue;
+}
+.expertise--content--block p {
+  color: $gun--metal;
+}
+.expertise--row [class*="col-xs"] {
+  padding: 25px 0;
+}
+.expertise--row .box {
+  text-align: left;
+}
+.expertise--row .content--block--page--banner {
+  height: 200px;
+}
+.expertise--row .final--content--block {
+  background-color: $dark--gray;
+}
+.expertise--row .final--content--block h2 {
+  color: $white;
+}
+.expertise--row .final--content--block h2 span {
+  color: $baby--blue;
+}
+.expertise--stat {
+  padding: 200px 0;
+}

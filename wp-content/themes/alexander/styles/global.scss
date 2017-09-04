@@ -20,22 +20,27 @@ $white: #FFFFFF;
 // background colors :
 .baby--blue {
   background-color: $baby--blue;
+  align-self: stretch;
 }
 .baby--blue--gradient {
   background: -webkit-gradient(linear, left top, left bottom, from(#58bde7), to(#088dc4));
   background: linear-gradient(#58bde7 0%, #088dc4 100%);
   color: $white;
+  align-self: stretch;
 }
 .dark--gray {
   background-color: $dark--gray;
+  align-self: stretch;
   color: $white;
 }
 .dark--blue {
   background-color: $dark--blue;
+  align-self: stretch;
   color: $white;
 }
 .silver {
   background-color: $silver;
+  align-self: stretch;
   color: $white;
 }
 
@@ -73,6 +78,7 @@ $white: #FFFFFF;
 @import "pages/home";
 @import "pages/about";
 @import "pages/leadership";
+@import "pages/expertise";
 
 body {
   overflow-x: hidden;
