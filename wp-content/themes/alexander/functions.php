@@ -69,7 +69,14 @@ $smarty = new Smarty_Base();
 
 function theme_assets()
 {
-	wp_deregister_script('jquery');
+	wp_enqueue_script(
+		'gmaps-api',
+		'https://maps.googleapis.com/maps/api/js?key=AIzaSyA3Ibb_wNxXG5xwHIWvti3Ni_qYybQMNac',
+		array(),
+		null,
+		true
+	);
+
     wp_enqueue_script('javascript', THEME_URI . '/javascript/global.js', array(), null, true);
     wp_enqueue_style('turret-css', THEME_URI . '/includes/turretcss.min.css', array(), null);
     wp_enqueue_style('flexbox-grid-css', THEME_URI . '/includes/flexboxgrid.css', array(), null);

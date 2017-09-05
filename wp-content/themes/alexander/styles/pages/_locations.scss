@@ -1,0 +1,144 @@
+.locations--container {
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 350ms ease-out;
+}
+.locations--container:hover,
+.locations--container.active {
+  transform: translateX(8rem);
+  background-color: #1F242A;
+  padding-left: 2.5rem;
+  box-shadow: 15px 0 15px -15px rgba(44,62,80,.5);
+}
+.locations--container.active {
+  cursor: default;
+}
+.locations--container:hover span.title,
+.locations--container.active span.title {
+  transform: translateX(-6rem);
+}
+.locations--container:hover span.arrow svg,
+.locations--container.active span.arrow svg {
+  opacity: 1;
+  transform: translateX(0);
+}
+.locations--container h1 {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  color: $white;
+}
+.locations--container.active span {
+  transition: all 350ms ease-out;
+}
+.locations--container span.title {
+  transition: all 350ms ease-out;
+}
+.locations--container span.arrow {
+  flex-basis: 20%;
+  max-width: 20%;
+  margin-left: auto;
+  margin-right: 1rem;
+  position: absolute;
+}
+.locations--container span.arrow svg {
+  width: 30px;
+  transition: all 300ms ease-out;
+  opacity: 0;
+  transform: translateX(-3rem);
+  position: relative;
+  top: -2px;
+}
+.locations--container span.arrow svg path {
+  fill: $white;
+}
+.locations--map--container {
+  width: 100%;
+  height: 100%;
+  display: none;
+  visibility: hidden;
+}
+.locations--map--container.active {
+  display: block;
+  visibility: visible;
+}
+.circular--map {
+  margin: 0 auto;
+  z-index: 2;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  position: relative;
+}
+.circular--map:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+  border-radius: 50%;
+  content: '';
+  left: 0;
+  top: 0;
+  z-index: 2;
+  box-shadow: inset 0 0 8px 0 rgba(44, 62, 80, 0.5);
+}
+.locations--addresses {
+  display: inline-block;
+}
+.locations--addresses .box {
+  text-align: left;
+}
+.locations--addresses h1 {
+  margin-top: 0;
+  color: $baby--blue;
+}
+.locations--addresses h2 {
+  font-size: 1.2em;
+  margin-bottom: 0;
+  color: $gun--metal;
+}
+.locations--addresses .phone h1 {
+  color: $dark--gray;
+  margin-top: 15px;
+}
+.locations--map--container.box {
+  padding: 5rem;
+}
+form {
+  text-align: left;
+  padding: 60px 0;
+}
+span.wpcf7-list-item {
+  display: block;
+  margin-left: 0;
+}
+label {
+  text-transform: uppercase;
+  color: $gun--metal;
+}
+input:not(:disabled):focus, textarea:not(:disabled):focus {
+  border-color: $dark--blue;
+  background: $silver;
+  outline: none;
+}
+.wpcf7-form-control-wrap.upload {
+  margin: 20px 0;
+  display: block;
+}
+[type=reset],
+[type=submit],
+[type=button] {
+  display: inline-block;
+  width: auto;
+  background: $dark--blue;
+  border: none;
+  color: $white;
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  text-transform: uppercase;
+  cursor: pointer;
+  &:hover {
+    background: $gun--metal;
+  }
+}
