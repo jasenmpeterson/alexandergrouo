@@ -19,6 +19,7 @@ $smarty->assign('pageSlug', $pageSlug);
 $smarty->assign('pageTitle', get_the_title($page_id));
 
 $smarty->assign('themeURL', THEME_URI);
+$smarty->assign('siteURL', THEME_ROOT);
 
 $smarty->assign('homeURL', get_bloginfo('url'));
 

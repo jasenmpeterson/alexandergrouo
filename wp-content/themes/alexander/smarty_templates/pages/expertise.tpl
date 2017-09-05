@@ -82,7 +82,6 @@
                 {/foreach}
             </div>
         </div>
-        <div class="col-xs-1 silver"></div>
     </div>
 </section>
 
@@ -99,4 +98,5 @@
             {$content_block_six}
         </div>
     </div>
+    <div class="col-xs-5 silver""></div>
 </section>

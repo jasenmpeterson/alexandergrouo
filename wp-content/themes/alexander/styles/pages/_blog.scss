@@ -1,0 +1,235 @@
+.posts--row {
+  margin-top: 105px;
+}
+.posts--row article {
+  text-align: left;
+}
+.posts--row a {
+  text-decoration: none;
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.posts--row a:hover {
+  opacity: 0.5;
+}
+.row.featured--post {
+  padding-top: 105px;
+}
+.post--image {
+  height: 300px;
+}
+.featured--post .post--content {
+  padding: 20px;
+}
+.featured--post article {
+  background-color: $baby--blue;
+  height: 100%;
+}
+.featured--post article a {
+  display: block;
+}
+.featured--post .post--date {
+  color: #fff;
+  margin-bottom: 0;
+}
+.post--content h1{
+  font-size: 1.8em;
+  margin-top: 0;
+}
+.row.standard--post {
+  padding-bottom: 105px
+}
+.standard--post .post--image {
+  height: 100%;
+}
+.standard--post article {
+  margin: 25px 0;
+}
+.standard--post .post--content {
+  background-color: $white;
+  padding: 35px;
+}
+.standard--post h1 {
+  color: $dark--gray;
+}
+.standard--post .post--date {
+  color: $baby--blue;
+}
+.post--image--container {
+  padding-right: 0;
+}
+.twitter--feed {
+  background-color: $white;
+  margin-top: 25px;
+}
+.twitter--feed a {
+  display: flex;
+  align-items: center;
+}
+.twitter--icon {
+  display: inline-block;
+  width: 75px;
+}
+.twitter--icon svg {
+  fill: $baby--blue;
+}
+.twitter--feed h1 {
+  color: $baby--blue;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin: 0;
+}
+article.twitter--name {
+  margin: 0;
+}
+.twitter--name h1 {
+  position: relative;
+  top: -5px;
+  left: -10px;
+}
+.twitter--post {
+  display: flex;
+  color: $dark--gray;
+}
+.twitter--post .site--logo {
+  width: 80px;
+  max-width: 100%;
+}
+.twitter--post .site--logo svg .cls-1  {
+  fill: $baby--blue;
+}
+.twitter--post .site--logo svg .cls-3 {
+  fill: $white;
+}
+.twitter--post .site--logo svg .cls-2 {
+  stroke-width: 0.7px;
+}
+.twitter--post .site--logo svg .cls-2,
+.twitter--post .site--logo svg .cls-4 {
+  fill: none;
+  stroke: $white;
+}
+.twitter--post h1 {
+  font-size: 1.2em;
+  margin: 0;
+}
+.twitter--feed article {
+  border-bottom: 1px solid rgba(154, 154, 154, .2);
+  padding-bottom: 20px;
+}
+.twitter--feed article:last-child {
+  border: none;
+}
+.pagination {
+  text-align: left;
+  margin-top: 25px;
+  text-align: left;
+}
+.pagination span.current--page {
+  margin-right: 10px;
+  color: $dark--gray;
+}
+.pagination span.current,
+.pagination a {
+  margin-right: 5px;
+  color: $dark--gray;
+}
+.pagination span.current {
+  opacity: .2;
+}
+.pagination a:last-of-type {
+  margin-right: 0;
+}
+.breadcrumbs--container {
+  margin-top: 200px;
+  text-align: left;
+}
+.breadcrumbs--container ul {
+  margin: 0;
+  color: $gun--metal;
+}
+.breadcrumbs--container ul li {
+  display: inline-block;
+  margin-left: 0;
+}
+.breadcrumbs--container ul li a {
+  display: block;
+  color: $dark--gray;
+  text-decoration: none;
+  text-transform: lowercase;
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.breadcrumbs--container ul li a:hover {
+  color: $baby--blue;
+}
+.single-post--page--banner {
+  margin-top: 0;
+}
+.single-post--page--banner .page--banner--image {
+  position: relative;
+}
+.single--post--content,
+.recent--post {
+  text-align: left;
+}
+.single--post--title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 40px;
+  color: $white;
+  text-align: left;
+  min-width: 500px;
+}
+.single--post--title .post--date {
+  color: $white;
+  margin-top: 5px;
+}
+.single--post--title h1 {
+  margin: 0;
+}
+.single--post--content {
+  color: $dark--gray;
+  padding-top: 60px;
+}
+.recent--post {
+  padding-top: 60px;
+}
+.recent--post ul {
+  margin: 0;
+  list-style-type: none;
+}
+.recent--post a {
+  text-decoration: none;
+  display: block;
+  color: $gun--metal;
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  font-size: .8em;
+}
+.recent--post a:hover {
+  color: $baby--blue;
+}
+.recent--post h2 {
+  background-color: $dark--gray;
+  padding: 20px;
+  margin: 0;
+  font-size: 1.2em;
+}
+.recent--post h2 span {
+  color: $baby--blue;
+}
+.recent--post.box {
+  padding-top: 0;
+  margin-top: 60px;
+  padding-right: 0;
+  margin-bottom: 60px;
+}
+.recent--post.box li {
+  background-color: $white;
+  margin: 0;
+  padding: 20px;
+  border-bottom: 1px solid rgba(154, 154, 154, .2);
+}
+.recent--post.box li:hover {
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-color: $dark--gray;
+}

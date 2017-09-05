@@ -44,6 +44,9 @@ $white: #FFFFFF;
   align-self: stretch;
   color: $white;
 }
+.white {
+  background-color: $white;
+}
 
 // box shadows :
 .box--shadow--all {
@@ -82,6 +85,7 @@ $white: #FFFFFF;
 @import "pages/expertise";
 @import "pages/services";
 @import "pages/locations";
+@import "pages/blog";
 
 body {
   overflow-x: hidden;

@@ -50,8 +50,10 @@
     <div class="col-xs-1 silver"></div>
 </div>
 
-<div class="row center-xs">
+<div class="row">
+    <div class="col-xs-1 dark--blue"></div>
     <div class="col-xs-5">
         {$locations_form}
     </div>
+    <div class="col-xs-6 silver"></div>
 </div>
