@@ -9,6 +9,10 @@
 
 get_header();
 
+$current_page = sanitize_post($GLOBALS['wp_the_query']->get_queried_object());
+
+$page_id = $current_page->ID;
+
 global $smarty;
 
 // leadership profiles:

@@ -60,6 +60,14 @@
 </div>
 
 <section class="expertise--background--image--wrap" style="background: url({$expertise_image})">
+    <section class="row">
+        <div class="col-xs-1 dark--blue"></div>
+        <div class="col-xs">
+            <div class="box expertise--title">
+                <h2>{$experience_title}</h2>
+            </div>
+        </div>
+    </section>
     <div class="row expertise--stats center-xs">
         <div class="col-xs-1 dark--blue"></div>
         <div class="col-xs">
@@ -75,5 +83,20 @@
             </div>
         </div>
         <div class="col-xs-1 silver"></div>
+    </div>
+</section>
+
+<section class="expertise--content--blocks expertise--content--block--four row">
+    <div class="col-xs-1 dark--blue"></div>
+    <div class="col-xs-6">
+        <div class="box">
+            {$content_block_four}
+        </div>
+        <div class="box">
+            {$content_block_five}
+        </div>
+        <div class="box">
+            {$content_block_six}
+        </div>
     </div>
 </section>

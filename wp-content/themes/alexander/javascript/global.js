@@ -9,7 +9,8 @@ require.config({
     paths: {
         'video-embeds': 'video-embeds',
         'axios': pageParams.siteURL + '/node_modules/axios/dist/axios',
-        'ajax': 'ajax'
+        'ajax': 'ajax',
+        'services': 'services'
     }
 });
 
@@ -22,4 +23,8 @@ require(['video-embeds'], function (videoEmbed) {
 // ajax :
 require(['ajax'], function (ajax, url) {
     ajax(siteURL)
+});
+// services :
+require(['services'], function (services) {
+    services()
 });

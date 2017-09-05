@@ -16,10 +16,6 @@ $pageSlug = $current_page->post_name;
 
 $smarty->assign('pageSlug', $pageSlug);
 
-$page_id = $current_page->ID;
-
-$smarty->assign('pageID', $page_id);
-
 $smarty->assign('pageTitle', get_the_title($page_id));
 
 $smarty->assign('themeURL', THEME_URI);

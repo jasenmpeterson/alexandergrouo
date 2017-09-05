@@ -5,13 +5,13 @@ a.button--default {
   align-items: center;
   color: #fff;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 400;
 }
 a.button--default:last-child {
   margin-top: 30px;
 }
 .button--default span {
-  background-color: $baby--blue;
+  background-color: $dark--blue;
   position: relative;
   padding: .5rem;
   border: 1px solid rgba(255,255,255,0.2);

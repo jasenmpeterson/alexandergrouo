@@ -59,3 +59,28 @@
   background-size: cover !important;
   position: relative;
 }
+.expertise--title.box {
+  position: relative;
+  top: 200px;
+  left: -90px;
+  color: $baby--blue;
+  text-align: center;
+}
+.expertise--content--blocks {
+  text-align: left;
+}
+.expertise--content--blocks p {
+  color: $gun--metal;
+}
+.expertise--content--blocks h2 {
+  color: $baby--blue
+}
+.expertise--content--blocks .box:first-child {
+  padding-top: 60px;
+}
+.expertise--content--blocks .box:last-child {
+  padding-bottom: 60px;
+}
+.expertise--content--blocks .box {
+  padding: 0 60px 20px;
+}

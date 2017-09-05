@@ -1,0 +1,73 @@
+.box.services--content {
+  padding: 5rem;
+}
+.services--content h1 {
+  color: $baby--blue;
+}
+.services--content p {
+  color: $gun--metal;
+}
+.services--content--block--image {
+  height: 100%;
+}
+.services--list .services--content {
+  display: none;
+  opacity: 0;
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  background-color: #fff;
+  color: $dark--gray;
+  @include box-shadow-all();
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 80px;
+}
+.services--content.active {
+  display: block;
+  opacity: 1;
+}
+.services--content--block--one {
+  padding-left: 0;
+}
+.services--content--image--block--one {
+  padding-right: 0;
+}
+.services--list a.button--default {
+  margin-bottom: 5px;
+}
+.box.expertise--content--block--x-padding {
+  padding: 4rem;
+}
+.industries--list .box {
+  padding-bottom: 0;
+}
+.functions--list .box {
+  padding-top: 25px;
+}
+.services--close--button {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+.services--close--button svg {
+  width: 100%;
+  height: 100%;
+}
+.services--close--button svg path {
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.services--close--button:hover svg path {
+  fill: $baby--blue;
+}
+.services--content h2 {
+  margin-top: 15px;
+  color: $baby--blue;
+}
