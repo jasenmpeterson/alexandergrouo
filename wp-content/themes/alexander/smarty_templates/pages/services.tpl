@@ -18,10 +18,8 @@
 </div>
 
 <div class="row dark--gray">
-    <div class="col-xs-6 services--content--image--block--one">
-        <section class="services--content--block--image page--banner--image--container">
-            <section class="content--block--page--banner page--banner--image box--shadow--all" style="background: url({$content_block_image})"></section>
-        </section>
+    <div class="col-xs-6 services--content--image--block services--content--image--block--one">
+        <section class="content--block--page--banner page--banner--image box--shadow--all" style="background: url({$content_block_image})"></section>
     </div>
     <div class="col-xs-6">
         <div class="row">
@@ -84,9 +82,7 @@
             {$content_block_two}
         </div>
     </div>
-    <div class="col-xs-6">
-        <section class="services--content--block--image page--banner--image--container">
-            <section class="content--block--page--banner page--banner--image box--shadow--all" style="background: url({$content_block_image_two})"></section>
-        </section>
+    <div class="col-xs-6 services--content--image--block">
+        <section class="content--block--page--banner page--banner--image box--shadow--all" style="background: url({$content_block_image_two})"></section>
     </div>
 </div>

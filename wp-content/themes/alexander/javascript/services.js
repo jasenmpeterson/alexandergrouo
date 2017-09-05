@@ -16,7 +16,7 @@ define(function () {
                 button.addEventListener('click', function(event) {
                     event.preventDefault()
                     const content_name = this.dataset.name
-                    content = document.querySelector('.services--list .services--content[data-name="'+content_name+'"');
+                    content = document.querySelector('.services--list .services--content[data-name="'+content_name+'"]');
                     const content_nodes = document.querySelectorAll('.services--list .services--content')
                     content_nodes.forEach(function (node) {
                         if(node.classList.contains('active')) {

@@ -6,7 +6,9 @@ require.config({
         'ajax': 'ajax',
         'services': 'services',
         'gmaps': 'gmaps',
-        'locations': 'locations'
+        'locations': 'locations',
+        'scroll_down': 'scroll_down',
+        'smooth_scroll': 'smooth_scroll'
     }
 });
 
@@ -24,6 +26,10 @@ require(['ajax'], function (ajax, url) {
 // services :
 require(['services'], function (services) {
     services()
+});
+// scroll down :
+require(['scroll_down'], function (scroll_down) {
+    scroll_down()
 });
 // gmaps :
 require(['gmaps']);

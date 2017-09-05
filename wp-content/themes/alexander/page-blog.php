@@ -38,7 +38,9 @@ if( $tag_posts->have_posts() ) {
 			'post_name' => get_the_title(),
 			'post_date' => get_the_date(),
 			'post_link' => get_permalink(),
-			'post_type' => get_post_type()
+			'post_type' => get_post_type(),
+			'link' => ( get_post_type() == 'tag_news' ) ? get_field('link') : '',
+			'media' => ( get_post_type() == 'tag_news' ) ? get_field('file_attachment') : ''
 		);
 	}
 	wp_reset_postdata();

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-09-02 16:43:25
+/* Smarty version 3.1.30, created on 2017-09-05 18:22:15
   from "/Users/jasenpeterson/www/alexandergroup/wp-content/themes/alexander/smarty_templates/pages/home.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59aadfadc14b93_19645053',
+  'unifunc' => 'content_59aeeb57535705_47389738',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f70599f5533ec8ea1db764b73616f5224f2d5650' => 
     array (
       0 => '/Users/jasenpeterson/www/alexandergroup/wp-content/themes/alexander/smarty_templates/pages/home.tpl',
-      1 => 1504287866,
+      1 => 1504635728,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59aadfadc14b93_19645053 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59aeeb57535705_47389738 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <section class="home--page--banner page--banner row center-xs middle-xs">
     <section class="page--banner--image" style="background: url(<?php echo $_smarty_tpl->tpl_vars['featured_image']->value;?>
@@ -28,9 +28,15 @@ function content_59aadfadc14b93_19645053 (Smarty_Internal_Template $_smarty_tpl)
     <div class="col-xs page--banner--content">
         <?php echo $_smarty_tpl->tpl_vars['content']->value;?>
 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="926.945 947.945 60.109 60.109" class="scroll--down">
+            <g transform="translate(811.5 954.5)">
+                <circle cx="28.055" cy="28.055" r="28.055" transform="translate(117.445 -4.555)"></circle>
+                <path d="M129.52 21.014l16.336 7.813 16.336-7.813"></path>
+            </g>
+        </svg>
     </div>
 </section>
-
+<section style="visibility: hidden; position: relative; top: -150px" class="hidden-anchor"></section>
 <section class="home--about--section row">
     <div class="col-xs">
         <div class="row">

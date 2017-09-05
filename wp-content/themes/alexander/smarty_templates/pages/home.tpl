@@ -2,9 +2,15 @@
     <section class="page--banner--image" style="background: url({$featured_image})"></section>
     <div class="col-xs page--banner--content">
         {$content}
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="926.945 947.945 60.109 60.109" class="scroll--down">
+            <g transform="translate(811.5 954.5)">
+                <circle cx="28.055" cy="28.055" r="28.055" transform="translate(117.445 -4.555)"></circle>
+                <path d="M129.52 21.014l16.336 7.813 16.336-7.813"></path>
+            </g>
+        </svg>
     </div>
 </section>
-
+<section style="visibility: hidden; position: relative; top: -150px" class="hidden-anchor"></section>
 <section class="home--about--section row">
     <div class="col-xs">
         <div class="row">

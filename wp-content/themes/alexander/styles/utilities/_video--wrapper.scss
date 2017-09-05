@@ -35,6 +35,7 @@
   -webkit-background-size: cover !important;
   background-size: cover !important;
   background-position: center center !important;
+  z-index: 1;
 }
 .video--poster:before {
   content: '';
@@ -73,7 +74,7 @@
 }
 .video--wrapper--active .video--poster {
   opacity: 0;
-  height: 0;
+  z-index: -1;
   -webkit-transition-delay: 0s, 800ms;
   -moz-transition-delay: 0s, 800ms;
   transition-delay: 0s, 800ms;

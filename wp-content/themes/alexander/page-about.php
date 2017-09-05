@@ -32,7 +32,7 @@ $smarty->assign('searches', get_field('search_types', $page_id));
 // culture video:
 $our_culture_video = get_field('our_culture_video', $page_id);
 $our_culture_video_poster = get_field('our_culture_video_poster', $page_id);
-$smarty->assign('our_culture_video', $about_us_video);
+$smarty->assign('our_culture_video', $our_culture_video);
 $smarty->assign('our_culture_video_poster', $our_culture_video_poster);
 
 // our culture layout:

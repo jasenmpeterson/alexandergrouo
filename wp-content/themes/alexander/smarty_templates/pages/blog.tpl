@@ -2,32 +2,33 @@
     <div class="col-xs-1 white"></div>
     <div class="col-xs silver">
         <div class="row featured--post center-xs">
-            <div class="col-xs-4">
-                <article class="box--shadow--all">
-                    <a href="{$posts[0].post_link}">
-                        <section class="post--image page--banner--image--container">
-                            <section class="page--banner--image about--page--image" style="background: url('{$siteURL}/wp-content/uploads/2017/06/pexels-photo-136413.jpg')"></section>
-                        </section>
-                        <section class="post--content">
-                            <h1>{$posts[0].post_name}</h1>
-                            <span class="post--date">{$posts[0].post_date}</span>
-                        </section>
-                    </a>
-                </article>
-            </div>
-            <div class="col-xs-4">
-                <article class="box--shadow--all">
-                    <a href="{$posts[1].post_link}">
-                        <section class="post--image page--banner--image--container">
-                            <section class="page--banner--image about--page--image" style="background: url('{$siteURL}/wp-content/uploads/2017/06/pexels-photo-136413.jpg')"></section>
-                        </section>
-                        <section class="post--content">
-                            <h1>{$posts[1].post_name}</h1>
-                            <span class="post--date">{$posts[1].post_date}</span>
-                        </section>
-                    </a>
-                </article>
-            </div>
+            {foreach $posts as $post key=key}
+                {if $key < 2}
+
+                    {if $post.link !== ''}
+                        {assign 'link' {$post.link} }
+                        {assign 'target' '_blank'}
+                    {elseif $post.media !== ''}
+                        {assign 'link' {$post.media} }
+                        {assign 'target' '_blank'}
+                    {else}
+                        {assign 'link' {$post.post_link} }
+                        {assign 'target' '_self'}
+                    {/if}
+
+                    <div class="col-xs-4">
+                        <article class="box--shadow--all">
+                            <a href="{$link}" data-id="{$post.post_type}" target="{$target}" class="bg--image--container">
+                                <section class="page--banner--image" style="background: url('{$siteURL}/wp-content/uploads/2017/06/pexels-photo-136413.jpg')"></section>
+                                <section class="post--content">
+                                    <h1>{$post.post_name}</h1>
+                                    <span class="post--date">{$post.post_date}</span>
+                                </section>
+                            </a>
+                        </article>
+                    </div>
+                {/if}
+            {/foreach}
         </div>
         <div class="row center-xs post--pagination">
             <div class="col-xs-8">
@@ -35,15 +36,23 @@
             </div>
         </div>
         <div class="row standard--post center-xs">
-            <div class="col-xs-5">
+            <div class="col-xs-5 post--container">
                 {foreach $posts as $post key=key}
                     {if $key > 1}
-                        <article class="box--shadow--all">
-                            <a href="{$post.post_link}" class="row">
-                                <div class="col-xs-3 post--image--container">
-                                    <section class="post--image page--banner--image--container">
-                                        <section class="page--banner--image about--page--image" style="background: url('{$siteURL}/wp-content/uploads/2017/06/pexels-photo-136413.jpg')"></section>
-                                    </section>
+                        {if $post.link !== ''}
+                            {assign 'link' {$post.link} }
+                            {assign 'target' '_blank'}
+                        {elseif $post.media !== ''}
+                            {assign 'link' {$post.media} }
+                            {assign 'target' '_blank'}
+                        {else}
+                            {assign 'link' {$post.post_link} }
+                            {assign 'target' '_self'}
+                        {/if}
+                        <article>
+                            <a href="{$link}" class="row box--shadow--all" target="{$target}">
+                                <div class="col-xs-3 post--image--container bg--image--container">
+                                    <section class="page--banner--image" style="background: url('{$siteURL}/wp-content/uploads/2017/06/pexels-photo-136413.jpg')"></section>
                                 </div>
                                 <section class="post--content col-xs-9">
                                     <h1>{$post.post_name}</h1>

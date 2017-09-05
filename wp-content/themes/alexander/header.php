@@ -21,7 +21,7 @@
 
     <body <?php body_class(); ?>>
 
-    <header class="row middle-xs">
+    <header class="row">
         <div class="col-xs-2">
             <section class="logo">
                 <a href="<?php echo THEME_ROOT; ?>">

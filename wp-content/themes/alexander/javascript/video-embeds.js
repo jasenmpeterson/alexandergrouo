@@ -10,6 +10,7 @@ define(function () {
         play_button.forEach(function(button) {
             button.addEventListener('click', function(event) {
                 event.preventDefault()
+                videoStop(wrapper)
                 const target = event.target
                 wrapper = target.parentNode.className.split(" ")[0]
                 videoPlay(wrapper)
@@ -18,23 +19,22 @@ define(function () {
 
         function videoPlay(wrapper) {
             active_wrapper = '.'+wrapper
-            videoStop(active_wrapper)
             iframe = document.querySelector(active_wrapper+' .video--iframe')
             const src = iframe.getAttribute('data-src')
-            console.log(iframe)
             iframe.parentNode.classList.add('video--wrapper--active')
             iframe.setAttribute('src', src)
         }
 
         function videoStop(wrapper) {
-            if (!wrapper) {
-                wrapper = document.querySelector('.js--video--wrapper')
-                iframe = document.querySelector('.js--video--iframe')
-            } else {
-                iframe = document.querySelector(active_wrapper+' .video--iframe')
+            if(iframe) {
+                iframe.setAttribute('src','')
             }
-            iframe.parentNode.classList.remove('videoWrapperActive');
-            iframe.setAttribute('src','');
+            if(wrapper) {
+                const curr_wrapper = document.querySelector('.'+wrapper)
+                if(curr_wrapper.classList.contains('video--wrapper--active')) {
+                    curr_wrapper.classList.remove('video--wrapper--active')
+                }
+            }
         }
     }
 })

@@ -81,4 +81,4 @@
     </section>
 </section>
 
-<img src="http://alexandergroup.ellpreview.com/wp-content/themes/TAG/assets/images/icons/rolling.svg" alt=""  class="ajax--spinner">
+<img src="{$themeURL}/static/img/rolling.svg" alt=""  class="ajax--spinner">

@@ -34,7 +34,8 @@
   background-repeat: no-repeat !important;
   -webkit-background-size: cover !important;
   background-size: cover !important;
-  background-position: center center !important; }
+  background-position: center center !important;
+  z-index: 1; }
 
 .video--poster:before {
   content: '';
@@ -73,7 +74,7 @@
 
 .video--wrapper--active .video--poster {
   opacity: 0;
-  height: 0;
+  z-index: -1;
   -webkit-transition-delay: 0s, 800ms;
   -moz-transition-delay: 0s, 800ms;
   transition-delay: 0s, 800ms; }
@@ -247,14 +248,17 @@ header {
   margin: 0 !important; }
 
 header .logo {
-  text-align: right;
-  margin-top: 60px; }
+  text-align: right; }
 
 header .logo a {
   display: inline-block; }
 
+header .social--media-icons {
+  padding-top: 35px; }
+
 .nav-inline .primary {
-  text-align: center; }
+  text-align: center;
+  padding-top: 35px; }
 
 .nav-inline ul li a {
   color: #FFFFFF;
@@ -511,7 +515,8 @@ a.button--default:last-child {
 .home--about--section .company--motto {
   min-height: 450px; }
 
-.home--page--banner h1 {
+.home--page--banner h1,
+.home--page--banner p {
   color: #FFFFFF; }
 
 .home--company--motto {
@@ -596,6 +601,31 @@ a.button--default:last-child {
   font-size: 1.5rem;
   line-height: 1.2; }
 
+.scroll--down {
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation: anim1 1.5s infinite; }
+
+.scroll--down:hover {
+  opacity: 0.5; }
+
+.scroll--down circle,
+.scroll--down path {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 4px; }
+
+@keyframes anim1 {
+  0% {
+    transform: translateY(0);
+    opacity: 0; }
+  100% {
+    transform: translateY(20px);
+    opacity: 1; } }
 .our--culture--quote {
   color: #FFFFFF;
   height: 500px; }
@@ -863,6 +893,9 @@ a.button--default:last-child {
 .services--content--image--block--one {
   padding-right: 0; }
 
+.services--content--image--block {
+  position: relative; }
+
 .services--list a.button--default {
   margin-bottom: 5px; }
 
@@ -1100,6 +1133,13 @@ input:not(:disabled):focus, textarea:not(:disabled):focus {
 .post--image--container {
   padding-right: 0; }
 
+.bg--image--container {
+  position: relative; }
+
+.bg--image--container .page--banner--image {
+  position: relative;
+  height: 200px; }
+
 .twitter--feed {
   background-color: #FFFFFF;
   margin-top: 25px; }
@@ -1232,7 +1272,8 @@ article.twitter--name {
 
 .single--post--content {
   color: #1F242A;
-  padding-top: 60px; }
+  padding-top: 60px;
+  padding-bottom: 60px; }
 
 .recent--post {
   padding-top: 60px; }
@@ -1246,7 +1287,9 @@ article.twitter--name {
   display: block;
   color: #9A9A9A;
   transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
-  font-size: .8em; }
+  font-size: .8em;
+  padding: 20px;
+  border-bottom: 1px solid rgba(154, 154, 154, 0.2); }
 
 .recent--post a:hover {
   color: #6CC8E9; }
@@ -1268,13 +1311,14 @@ article.twitter--name {
 
 .recent--post.box li {
   background-color: #FFFFFF;
-  margin: 0;
-  padding: 20px;
-  border-bottom: 1px solid rgba(154, 154, 154, 0.2); }
+  margin: 0; }
 
 .recent--post.box li:hover {
   transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
   background-color: #1F242A; }
+
+.standard--post .post--image--container {
+  padding-left: 0; }
 
 body {
   overflow-x: hidden; }
