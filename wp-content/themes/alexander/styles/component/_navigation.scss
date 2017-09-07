@@ -40,6 +40,10 @@
   content: '';
 }
 
+.nav-inline ul li:last-of-type:after {
+  display: none;
+}
+
 .hamburger--menu {
   position: relative;
   display: none;

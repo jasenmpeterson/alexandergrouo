@@ -6,6 +6,11 @@
   background-color: $white;
   transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+.post--list a h6 {
+  color: $baby--blue;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
 .post--list a:first-child {
   padding-top: 0;
 }

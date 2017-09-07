@@ -11,23 +11,19 @@
         <div class="col-xs-11">
             <div class="row center-xs leadership--profile--row">
                 {foreach $leadership_profiles as $leadership_profile name=loop}
-                <div class="col-sm-12 col-xs-3 col-md-4 profile--column">
-                    <div class="profile box--shadow--all">
-                        <section class="profile--image page--banner--image--container">
-                            <section class="page--banner--image about--page--image" style="background: url({$leadership_profile['image']['url']})"></section>
-                        </section>
-                        <section class="profile--content">
-                            <div class="box">
-                                <h1>{$leadership_profile['name']}</h1>
-                                <h2>{$leadership_profile['title']}</h2>
-                                {$leadership_profile['description']}
-                            </div>
-                            <section class="profile--buttons box-shadow-all">
-                                <a href="javascript:void(0);" data-id="{$leadership_profile['full_profile']}" class="ajax--button ajax--profile--button">Learn More</a>
-                                <a href="javascript:void(0);" class="v--card">Download VCard</a>
-                            </section>
-                        </section>
+                <div class="col-sm-12 col-xs-3 col-md-4 profile--column box--shadow--all">
+                    <section class="profile--image page--banner--image--container box--shadow--all">
+                        <section class="page--banner--image about--page--image" style="background: url({$leadership_profile['image']['url']})"></section>
+                    </section>
+                    <div class="box">
+                        <h1>{$leadership_profile['name']}</h1>
+                        <h2>{$leadership_profile['title']}</h2>
+                        {$leadership_profile['description']}
                     </div>
+                    <section class="profile--buttons box-shadow-all">
+                        <a href="javascript:void(0);" data-id="{$leadership_profile['full_profile']}" class="ajax--button ajax--profile--button">Learn More</a>
+                        <a href="{$leadership_profile['vcard']}" class="v--card">Download VCard</a>
+                    </section>
                 </div>
                 {if $smarty.foreach.loop.iteration is even}</div><div class="row center-xs">{/if}
                 {/foreach}
@@ -64,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <div class="row dark--gray" style="display: none;">
+        <div class="row dark--gray">
             <div class="col-md-3 col-sm-12 dark--blue">
                 <div class="box experience--label">
                     <h1></h1>

@@ -46,6 +46,7 @@
                 <section class="home--post--title post--title">Blog</section>
                 {foreach $posts as $post}
                     <a href="{$post['link']}">
+                        <h6>{$post['title']}</h6>
                         {$post['content']}
                     </a>
                 {/foreach}
