@@ -12,15 +12,15 @@
 </section>
 <section style="visibility: hidden; position: relative; top: -150px" class="hidden-anchor"></section>
 <section class="home--about--section row">
-    <div class="col-xs">
+    <div class="col-sm">
         <div class="row">
-            <div class="col-xs-2 silver"></div>
-            <div class="col-xs">
+            <div class="col-sm-1 silver"></div>
+            <div class="col-sm">
                 <div class="row box--shadow--all">
-                    <div class="col-xs page--banner--image--container">
+                    <div class="col-sm-12 col-md-4 page--banner--image--container">
                         <section class="page--banner--image about--page--image" style="background: url({$about_page_image['url']})"></section>
                     </div>
-                    <div class="col-xs-4 baby--blue--gradient">
+                    <div class="col-sm-12 col-md-8 baby--blue--gradient">
                         <div class="box">
                             {$about_content}
                             <a href="{$about_link}" class="button--default">
@@ -33,14 +33,14 @@
             </div>
         </div>
         <div class="row home--company--motto company--motto middle-xs center-xs">
-            <section class="col-xs-12">
+            <section class="col-sm-12">
                 <div class="box">
                     {$company_motto}
                 </div>
             </section>
         </div>
     </div>
-    <div class="col-xs-3 silver">
+    <div class="col-sm-12 col-md-4 silver">
         <section class="box">
             <section class="post--list">
                 <section class="home--post--title post--title">Blog</section>
@@ -50,7 +50,7 @@
                     </a>
                 {/foreach}
             </section>
-            <a href="{$blog_link}" class="button--default">
+            <a href="{$blog_link}blog" class="button--default">
                 <span>Read More</span>
                 <div class="line"></div>
             </a>
@@ -60,13 +60,13 @@
 </section>
 
 <section class="home--expertise--section row middle-xs">
-    <div class="col-xs-6 page--banner--image--container">
+    <div class="col-sm-12 col-md-6 page--banner--image--container">
         <section class="page--banner--image expertise--page--image" style="background: url({$expertise_image})"></section>
     </div>
-    <div class="col-xs home-page-expertise-content">
+    <div class="col-sm-12 col-md-6 home-page-expertise-content">
         <section class="box">
             {$expertise_content}
-            <a href="{$exprtise_link}" class="button--default">
+            <a href="{$expertise_link}" class="button--default">
                 <span>Read More</span>
                 <div class="line"></div>
             </a>
@@ -75,17 +75,17 @@
 </section>
 
 <section class="home--locations--section row">
-    <div class="col-xs-4">
+    <div class="col-sm-12 col-md-6">
         <div class="row">
-            <section class="col-xs-12 home--locations--content">
+            <section class="col-sm-12 home--locations--content">
                 <div class="box">
                     {$locations_content}
                 </div>
             </section>
         </div>
         <div class="row">
-            <div class="col-xs-3 silver"></div>
-            <section class="col-xs-9 home--locations-list baby--blue--gradient">
+            <div class="col-sm-12 col-md-3 silver"></div>
+            <section class="col-sm-9 home--locations-list baby--blue--gradient">
                 <div class="box">
                     <ul>
                         {foreach $locations_list as $location}
@@ -100,14 +100,14 @@
             </section>
         </div>
     </div>
-    <div class="col-xs-8 page--banner--image--container">
+    <div class="col-sm-12 col-md-6 page--banner--image--container">
         <section class="page--banner--image locations--page--image" style="background: url({$locations_image})"></section>
     </div>
 </section>
 
 <section class="home--tag--news row">
     {foreach $tag_news as $news}
-        <div class="col-xs-4">
+        <div class="col-sm-12 col-md-4">
             {if {$news['link_or_media']} === 'Media'}
                 <a href="{$news['media']}" target="_blank">
                 {else}

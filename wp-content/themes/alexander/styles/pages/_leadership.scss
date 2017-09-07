@@ -78,3 +78,24 @@
 .box.list h1 {
   color: $baby--blue;
 }
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .leadership--profiles .profile {
+    width: 90%;
+    margin: 0 auto 35px auto;
+  }
+  .box.list h1 {
+    font-size: 1.8rem;
+  }
+  .box.list li {
+    max-width: 100%;
+    flex-basis: 100%;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  .ajax--profile--content h1 {
+    font-size: 1.5rem;
+  }
+  .ajax--profile--content .box {
+    padding: 45px;
+  }
+}

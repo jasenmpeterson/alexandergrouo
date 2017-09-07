@@ -8,7 +8,8 @@ require.config({
         'gmaps': 'gmaps',
         'locations': 'locations',
         'scroll_down': 'scroll_down',
-        'smooth_scroll': 'smooth_scroll'
+        'smooth_scroll': 'smooth_scroll',
+        'mobile_menu': 'mobile_menu'
     }
 });
 
@@ -30,6 +31,10 @@ require(['services'], function (services) {
 // scroll down :
 require(['scroll_down'], function (scroll_down) {
     scroll_down()
+});
+// mobile menu :
+require(['mobile_menu'], function (mobile_menu) {
+    mobile_menu()
 });
 // gmaps :
 require(['gmaps']);

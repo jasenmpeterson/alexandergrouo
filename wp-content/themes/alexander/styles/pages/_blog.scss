@@ -127,9 +127,7 @@ article.twitter--name {
   border: none;
 }
 .pagination {
-  text-align: left;
   margin-top: 25px;
-  text-align: left;
 }
 .pagination span.current--page {
   margin-right: 10px;
@@ -187,6 +185,12 @@ article.twitter--name {
   text-align: left;
   min-width: 500px;
 }
+.single--post--page--banner {
+  margin-top: 0;
+}
+.single--post--page--banner  .single--post--title {
+  min-width: 0;
+}
 .single--post--title .post--date {
   color: $white;
   margin-top: 5px;
@@ -196,7 +200,7 @@ article.twitter--name {
 }
 .single--post--content {
   color: $dark--gray;
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 60px;
 }
 .recent--post {
@@ -229,7 +233,7 @@ article.twitter--name {
 }
 .recent--post.box {
   padding-top: 0;
-  margin-top: 60px;
+  margin-top: 40px;
   padding-right: 0;
   margin-bottom: 60px;
 }
@@ -243,4 +247,40 @@ article.twitter--name {
 }
 .standard--post .post--image--container {
   padding-left: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .row.standard--post {
+    margin: 0 auto;
+    width: 869px;
+    max-width: 100%;
+  }
+  .post--pagination {
+    margin-left: 25px;
+  }
+  .row.featured--post .col-sm-12 {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .recent--post.box {
+    padding: 0;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 1099px) {
+  .single--post--content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 1439px) {
+  .row.featured--post {
+    margin: 0 auto;
+    width: 869px;
+    max-width: 100%;
+  }
 }

@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0"
+  },
+  "dependencies": {
+    "flexboxgrid-sass": "^8.0.5"
   }
 }

@@ -17,3 +17,27 @@ header .logo a {
 header .social--media-icons {
   padding-top: 35px;
 }
+
+@media only screen and (max-width: 1024px) {
+  header .nav-inline {
+    display: none;
+  }
+  .mobile--menu {
+    display: block !important;
+  }
+  .mobile--menu .nav-inline {
+    display: block;
+  }
+  .mobile--menu .social-media-icons {
+    padding-top: 35px;
+  }
+  header .hamburger--menu {
+    display: block;
+  }
+  .social--media--container {
+    display: none;
+  }
+  header .logo {
+    text-align: left;
+  }
+}

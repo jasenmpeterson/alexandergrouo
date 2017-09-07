@@ -141,3 +141,37 @@ input:not(:disabled):focus, textarea:not(:disabled):focus {
     background: $gun--metal;
   }
 }
+
+@media only screen and (max-width:1439px) {
+  .circular--map {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .locations--container:hover, .locations--container.active {
+    transform: translateX(0);
+    padding-left: 0;
+  }
+  .locations--container h1 {
+    display: block;
+  }
+  .locations--container span.arrow svg {
+    width: 20px;
+    top: -4px;
+    left: 10px;
+  }
+  form {
+    padding: 34px;
+  }
+  .locations--addresses h2 {
+    font-size: 1rem;
+  }
+  .locations--addresses h1 {
+    font-size: 2rem;
+  }
+  .locations--map--container.box {
+    padding: 20px 0;
+  }
+}

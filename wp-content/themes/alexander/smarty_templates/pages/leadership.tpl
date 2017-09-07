@@ -11,7 +11,7 @@
         <div class="col-xs-11">
             <div class="row center-xs leadership--profile--row">
                 {foreach $leadership_profiles as $leadership_profile name=loop}
-                <div class="col-xs-3 profile--column">
+                <div class="col-sm-12 col-xs-3 col-md-4 profile--column">
                     <div class="profile box--shadow--all">
                         <section class="profile--image page--banner--image--container">
                             <section class="page--banner--image about--page--image" style="background: url({$leadership_profile['image']['url']})"></section>
@@ -38,7 +38,7 @@
 <section class="ajax--modal">
     <section class="ajax--profile ajax--container">
         <div class="row">
-            <div class="col-xs-3 dark--gray">
+            <div class="col-md-3 col-sm-12 dark--gray">
                 <div class="box name">
                     <h1></h1>
                 </div>
@@ -55,7 +55,7 @@
             <section class="page--banner--image--container col-xs-3">
                 <section class="page--banner--image ajax--profile--image" style="background: url(http://localhost.thealexandergroup:9999/wp-content/uploads/2017/06/headshot_1.jpg)"></section>
             </section>
-            <div class="col-xs-9 baby--blue--gradient">
+            <div class="col-md-9 col-sm-12 baby--blue--gradient">
                 <div class="ajax--profile--content">
                     <div class="box">
                         <h1></h1>
@@ -64,15 +64,15 @@
                 </div>
             </div>
         </div>
-        <div class="row dark--gray">
-            <div class="col-xs-3 dark--blue">
+        <div class="row dark--gray" style="display: none;">
+            <div class="col-md-3 col-sm-12 dark--blue">
                 <div class="box experience--label">
                     <h1></h1>
                 </div>
             </div>
         </div>
         <div class="row dark--gray">
-            <div class="col-xs">
+            <div class="col-md col-sm-12">
                 <div class="box list">
                     <ul></ul>
                 </div>

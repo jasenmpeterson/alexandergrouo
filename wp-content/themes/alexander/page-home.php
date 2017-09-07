@@ -11,6 +11,10 @@ get_header();
 
 global $smarty;
 
+$current_page = sanitize_post($GLOBALS['wp_the_query']->get_queried_object());
+
+$page_id = $current_page->ID;
+
 $home_content = get_post($page_id);
 
 $about_content_id = get_field('about_page_object', $page_id);
@@ -51,7 +55,7 @@ if( $post_list->have_posts() ) {
 	wp_reset_postdata();
 };
 $blog_post_id = get_field('blog_post_object', $page_id);
-$blog_page_link = get_permalink($blog_post_id);
+$blog_page_link = get_permalink($page_id);
 
 $tag_news_list_array;
 $tag_news_args = array(
@@ -87,6 +91,7 @@ $smarty->assign('about_link', $about_link);
 
 $smarty->assign('expertise_content', wpautop($expertise_content->post_content));
 $smarty->assign('expertise_image', $expertise_image);
+$smarty->assign('expertise_link', $expertise_link);
 
 $smarty->assign('company_motto', $company_motto);
 

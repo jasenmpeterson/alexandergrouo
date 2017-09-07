@@ -10,7 +10,7 @@
 
 <div class="row expertise--row">
     <div class="col-xs-1 dark--blue"></div>
-    <div class="col-xs-4 baby--blue--gradient expertise--headline">
+    <div class="col-md-4 baby--blue--gradient expertise--headline">
         <div class="box">
             {$headline}
         </div>
@@ -22,12 +22,12 @@
     <div class="col-xs-1 dark--blue"></div>
     <div class="col-xs">
         <div class="row middle-xs center-xs">
-            <div class="col-xs-4">
+            <div class="col-md-6 col-sm-12">
                 <div class="box expertise--hero--text">
                     {$hero_text}
                 </div>
             </div>
-            <div class="col-xs-4">
+            <div class="col-md-6 col-sm-12">
                 <div class="box expertise--content--block">
                     {$content_block}
                 </div>
@@ -41,12 +41,12 @@
     <div class="col-xs-1 dark--blue"></div>
     <div class="col-xs">
         <div class="row center-xs">
-            <div class="col-xs-4">
+            <div class="col-md-6 col-sm-12">
                 <div class="box expertise--content--block">
                     {$content_block_two}
                 </div>
             </div>
-            <div class="col-xs-6">
+            <div class="col-md-6 col-sm-12">
                 <div class="box expertise--content--block final--content--block box--shadow--all">
                     {$content_block_three}
                 </div>
@@ -73,7 +73,7 @@
         <div class="col-xs">
             <div class="row">
                 {foreach $experience_stats as $experience_stat}
-                    <div class="col-xs-4">
+                    <div class="col-md-4 col-sm-12">
                         <section class="expertise--stat">
                             <h1>{$experience_stat['label']}</h1>
                             {$experience_stat['content']}
@@ -87,7 +87,7 @@
 
 <section class="expertise--content--blocks expertise--content--block--four row">
     <div class="col-xs-1 dark--blue"></div>
-    <div class="col-xs-6">
+    <div class="col-md-6 col-sm-11">
         <div class="box">
             {$content_block_four}
         </div>
@@ -98,5 +98,5 @@
             {$content_block_six}
         </div>
     </div>
-    <div class="col-xs-5 silver""></div>
+    <div class="col-md-5 col-sm-1 silver""></div>
 </section>

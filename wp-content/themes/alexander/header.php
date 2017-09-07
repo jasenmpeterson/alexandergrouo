@@ -22,7 +22,7 @@
     <body <?php body_class(); ?>>
 
     <header class="row">
-        <div class="col-xs-2">
+        <div class="col-md-2">
             <section class="logo">
                 <a href="<?php echo THEME_ROOT; ?>">
                     <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 173.57 145.18">
@@ -37,8 +37,13 @@
         </div>
         <div class="col-xs">
 	        <?php get_template_part('components/navigation'); ?>
+            <section class="hamburger--menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
         </div>
-        <div class="col-xs-3">
+        <div class="col-xs-3 social--media--container">
 	        <?php get_template_part('components/social_media'); ?>
         </div>
     </header>

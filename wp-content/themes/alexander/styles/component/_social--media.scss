@@ -8,6 +8,9 @@
   border: none !important;
   padding: 0;
 }
+.social--media-icons ul li:first-of-type {
+  padding-left: 0;
+}
 .social--media-icons ul li a svg {
   width: 100%;
   fill: $white;

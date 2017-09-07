@@ -1,8 +1,8 @@
     <footer class="row center-xs bottom-xs around-xs">
-        <div class="col-xs-4">
+        <div class="col-sm-12 col-md-4">
             &copy; <?php echo date('Y'); ?> The Alexander Group
         </div>
-        <div class="col-xs-4">
+        <div class="col-sm-12 col-md-4">
             <section class="logo">
                 <a href="<?php echo THEME_ROOT; ?>">
                     <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 173.57 145.18">
@@ -15,7 +15,7 @@
             </section>
             <!--/logo-->
         </div>
-        <div class="col-xs-4">
+        <div class="col-sm-12 col-md-4">
 		    <?php get_template_part('components/social_media'); ?>
         </div>
     </footer>

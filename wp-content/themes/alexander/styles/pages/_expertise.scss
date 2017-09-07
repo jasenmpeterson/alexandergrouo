@@ -83,3 +83,26 @@
 .expertise--content--blocks .box {
   padding: 0 60px 20px;
 }
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .expertise--hero--text h1 {
+    font-size: 2rem;
+  }
+  .expertise--stat {
+    padding: 50px 0;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .expertise--row .content--block--page--banner {
+    position: relative;
+  }
+  .expertise--title.box {
+    top: 0;
+  }
+  .expertise--content--blocks .box {
+    padding: 10px;
+  }
+  .expertise--headline h2 {
+    font-size: 1.5rem;
+  }
+}

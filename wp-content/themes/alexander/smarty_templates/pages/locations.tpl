@@ -8,8 +8,8 @@
 </section>
 
 <div class="row center-xs">
-    <div class="col-xs-1 dark--gray"></div>
-    <div class="col-xs-3 baby--blue--gradient">
+    <div class="col-md-1 dark--gray"></div>
+    <div class="col-md-4 col-sm-12 baby--blue--gradient">
         <div class="box locations--list">
             {foreach from=$locations item=location name=locations}
             <div class="locations--container {if $smarty.foreach.locations.iteration == 1}active{/if}" data-location-id="{$location.location|replace:' ':''}">
@@ -25,7 +25,7 @@
             {/foreach}
         </div>
     </div>
-    <div class="col-xs-7">
+    <div class="col-lg-7 col-md-7 col-sm-12">
         {foreach $locations as $addresses name=addresses}
             <section class="locations--map--container box {if $smarty.foreach.addresses.iteration == 1}active{/if}" data-location-id="{$addresses.location|replace:' ':''}">
                 <section class="circular--map acf-map">
@@ -47,13 +47,13 @@
             </section>
         {/foreach}
     </div>
-    <div class="col-xs-1 silver"></div>
+    <div class="col-md-1 col-sm-12 silver"></div>
 </div>
 
 <div class="row">
-    <div class="col-xs-1 dark--blue"></div>
-    <div class="col-xs-5">
+    <div class="col-md-1 col-sm-12 dark--blue"></div>
+    <div class="col-md-5 col-sm-12">
         {$locations_form}
     </div>
-    <div class="col-xs-6 silver"></div>
+    <div class="col-md-6 col-sm-12 silver"></div>
 </div>

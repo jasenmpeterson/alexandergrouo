@@ -8,3 +8,9 @@ footer .logo a {
   margin: 0 auto;
   width: 9.5rem;
 }
+// media queries
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  footer [class^="col-"] {
+    padding: 20px 0;
+  }
+}

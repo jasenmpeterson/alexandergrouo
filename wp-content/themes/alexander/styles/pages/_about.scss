@@ -61,3 +61,27 @@
 .search-types .box:last-of-type {
   padding-bottom: 70px;
 }
+
+@media screen and (min-width: 20rem) {
+  .box.list ul {
+    display: block;
+  }
+  .row.search-types {
+    margin-left: 0;
+  }
+  .search-types .box {
+    max-width: 100%;
+  }
+  .our--culture--content .box {
+    padding: 40px;
+  }
+  .about--us--title.box {
+    padding-bottom: 0;
+  }
+  .about--us--content.box {
+    padding-top: 20px;
+  }
+  .our--culture--quote .box h1 {
+    font-size: 2rem
+  }
+}

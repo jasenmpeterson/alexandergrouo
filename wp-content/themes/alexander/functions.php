@@ -83,7 +83,6 @@ function theme_assets()
 
     wp_enqueue_script('javascript', THEME_URI . '/javascript/global.js', array(), null, true);
     wp_enqueue_style('turret-css', THEME_URI . '/includes/turretcss.min.css', array(), null);
-    wp_enqueue_style('flexbox-grid-css', THEME_URI . '/includes/flexboxgrid.css', array(), null);
     wp_enqueue_style('css', THEME_URI . '/styles/global.css', array(), null);
 
     $ajax_url = admin_url('admin-ajax.php');

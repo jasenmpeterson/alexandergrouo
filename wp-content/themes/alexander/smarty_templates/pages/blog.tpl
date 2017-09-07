@@ -16,7 +16,7 @@
                         {assign 'target' '_self'}
                     {/if}
 
-                    <div class="col-xs-4">
+                    <div class="col-md-6 col-lg-5 col-sm-12">
                         <article class="box--shadow--all">
                             <a href="{$link}" data-id="{$post.post_type}" target="{$target}" class="bg--image--container">
                                 <section class="page--banner--image" style="background: url('{$siteURL}/wp-content/uploads/2017/06/pexels-photo-136413.jpg')"></section>
@@ -30,13 +30,13 @@
                 {/if}
             {/foreach}
         </div>
-        <div class="row center-xs post--pagination">
-            <div class="col-xs-8">
+        <div class="row center-md post--pagination">
+            <div class="col-sm-12">
                 {$pagination->pagination($max_num_pages)}
             </div>
         </div>
         <div class="row standard--post center-xs">
-            <div class="col-xs-5 post--container">
+            <div class="col-md-6 post--container">
                 {foreach $posts as $post key=key}
                     {if $key > 1}
                         {if $post.link !== ''}
@@ -63,7 +63,7 @@
                     {/if}
                 {/foreach}
             </div>
-            <div class="col-xs-3">
+            <div class="col-md-4">
                 <section class="twitter--feed box box--shadow--all">
                     {foreach $twitter_feed as $feed name=twitterloop}
                         {if $smarty.foreach.twitterloop.iteration == 1}

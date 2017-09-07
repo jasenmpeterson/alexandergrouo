@@ -37,7 +37,7 @@
 }
 .home-page-expertise-content .box {
   color: $white;
-  width: 60%;
+  width: 65%;
 }
 .home--expertise--section .page--banner--image--container {
   height: 100%;
@@ -117,4 +117,46 @@
     transform: translateY(20px);
     opacity: 1;
   }
+}
+
+// media queries
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .home--about--section .page--banner--image--container,
+  .home--expertise--section .page--banner--image--container {
+    height: 300px
+  }
+  .home-page-expertise-content .box {
+    width: 100%;
+  }
+  .home--expertise--section {
+    height: auto;
+  }
+  .home--locations--content .box {
+    width: 100%;
+    padding: 50px 30px;
+  }
+  .home--locations-list ul li {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+  .home--tag--news [class^="col-"] a {
+    margin-bottom: 35px;
+  }
+  .home--tag--news [class^="col-"]:last-of-type a {
+    margin-bottom: 0;
+  }
+  .page--banner--content h1 {
+    font-size: 2.25rem;
+  }
+  .company--motto h1 {
+    font-size: 2.2rem
+  }
+  .home--locations--section h1 {
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 1439px) {
+  .home--tag--news h1 {
+     font-size: 1.2rem;
+   }
 }

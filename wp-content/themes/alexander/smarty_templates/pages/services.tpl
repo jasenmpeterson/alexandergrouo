@@ -8,20 +8,20 @@
 </section>
 
 <div class="row">
-    <div class="col-xs-3 silver"></div>
-    <div class="col-xs-6 box--shadow--all">
+    <div class="col-md-3 col-sm-1 silver"></div>
+    <div class="col-md-6 col-sm-10 box--shadow--all">
         <div class="box services--content">
             {$content}
         </div>
     </div>
-    <div class="col-xs-3 dark--gray"></div>
+    <div class="col-md-3 col-sm-1 dark--gray"></div>
 </div>
 
 <div class="row dark--gray">
-    <div class="col-xs-6 services--content--image--block services--content--image--block--one">
+    <div class="col-md-6 col-sm-12 services--content--image--block services--content--image--block--one">
         <section class="content--block--page--banner page--banner--image box--shadow--all" style="background: url({$content_block_image})"></section>
     </div>
-    <div class="col-xs-6">
+    <div class="col-md-6 col-sm-12">
         <div class="row">
             <div class="col-xs services--content--block--one baby--blue">
                 <div class="box box--shadow--all expertise--content--block--x-padding">
@@ -77,12 +77,12 @@
 </div>
 
 <div class="row baby--blue">
-    <div class="col-xs-6">
+    <div class="col-md-6 col-sm-12">
         <div class="box expertise--content--block--x-padding">
             {$content_block_two}
         </div>
     </div>
-    <div class="col-xs-6 services--content--image--block">
+    <div class="col-md-6 col-sm-12 services--content--image--block">
         <section class="content--block--page--banner page--banner--image box--shadow--all" style="background: url({$content_block_image_two})"></section>
     </div>
 </div>
