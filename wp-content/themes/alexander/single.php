@@ -14,9 +14,6 @@ $page_id = $current_page->ID;
 
 global $smarty;
 
-$current_page = sanitize_post($GLOBALS['wp_the_query']->get_queried_object());
-
-$page_id = $current_page->ID;
 $smarty->assign('page_id', $page_id);
 
 $breadcrumbs = new breadcrumbs();

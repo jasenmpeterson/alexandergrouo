@@ -37,8 +37,14 @@ define(function () {
 
                             // trigger map resize so it displays correctly when a new location is selected
 
-                            google.maps.event.trigger(maps[i], 'resize')
-                            google.maps.event.trigger(maps[i], 'update')
+                            google.maps.event.trigger(maps[i], 'resize', function() {
+                                maps[i].setCenter(center)
+                            })
+                            google.maps.event.trigger(maps[i], 'update', function() {
+                                maps[i].setCenter(center)
+                            })
+
+                            console.log(google.maps)
                         }
                     }
 

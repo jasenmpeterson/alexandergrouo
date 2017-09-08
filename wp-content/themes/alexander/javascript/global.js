@@ -24,10 +24,10 @@ require(['video-embeds'], function (videoEmbed) {
 require(['ajax'], function (ajax, url) {
     ajax(siteURL)
 });
-// services :
-require(['services'], function (services) {
-    services()
-});
+// // services :
+// require(['services'], function (services) {
+//     services()
+// });
 // scroll down :
 require(['scroll_down'], function (scroll_down) {
     scroll_down()

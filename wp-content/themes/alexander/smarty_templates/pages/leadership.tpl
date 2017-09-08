@@ -48,7 +48,7 @@
             </div>
         </div>
         <div class="row">
-            <section class="page--banner--image--container col-xs-3">
+            <section class="page--banner--image--container col-md-3 col-sm-12">
                 <section class="page--banner--image ajax--profile--image" style="background: url(http://localhost.thealexandergroup:9999/wp-content/uploads/2017/06/headshot_1.jpg)"></section>
             </section>
             <div class="col-md-9 col-sm-12 baby--blue--gradient">

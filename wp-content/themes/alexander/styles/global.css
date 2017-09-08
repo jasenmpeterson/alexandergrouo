@@ -3630,7 +3630,11 @@ a.button--default:last-child {
     font-size: 1.5rem; }
 
   .ajax--profile--content .box {
-    padding: 45px; } }
+    padding: 45px; }
+
+  .ajax--profile .page--banner--image--container {
+    width: 100%;
+    height: 400px; } }
 .expertise--page--banner .dark--blue {
   height: 100%;
   z-index: 2; }
@@ -3813,6 +3817,9 @@ a.button--default:last-child {
 .services--content h2 {
   margin-top: 15px;
   color: #6CC8E9; }
+
+.services--list a.button--default:last-child {
+  margin-top: 0; }
 
 @media screen and (min-width: 320px) and (max-width: 1024px) {
   .box.services--content {

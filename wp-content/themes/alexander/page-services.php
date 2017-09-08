@@ -42,6 +42,21 @@ if( $services->have_posts() ) {
 	wp_reset_postdata();
 };
 
+$services = get_field('services_linkage', $page_id);
+$services_array = null;
+
+foreach($services as $service) {
+	foreach($service as $item) {
+		$services_array[] = array(
+			'title' => $item->post_title,
+			'link' => get_permalink($item->ID),
+			'label' => get_the_terms($item->ID, 'services')
+		);
+	}
+}
+
+$smarty->assign('services', $services_array);
+
 $smarty->display(THEME_DIR . '/smarty_templates/pages/services.tpl');
 
 get_footer();

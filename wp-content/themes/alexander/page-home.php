@@ -38,6 +38,7 @@ $locations_link = get_permalink($locations_content_id);
 $post_list_args = array(
 	'post_type' => 'post',
 	'post_status' => 'publish',
+	'order'   => 'ASC',
 	'posts_per_page'=> 3
 );
 $post_list_array;

@@ -25,6 +25,7 @@ $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 $post_args = array(
 	'post_type' => array('post','tag_news'),
 	'post_status' => 'publish',
+	'order'   => 'ASC',
 	'posts_per_page' => 6,
 	'paged' => $paged
 );
