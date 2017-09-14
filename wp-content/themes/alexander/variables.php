@@ -10,12 +10,6 @@ global $smarty;
 
 // get the queried object and sanitize it :
 
-$current_page = sanitize_post($GLOBALS['wp_the_query']->get_queried_object());
-
-$pageSlug = $current_page->post_name;
-
-$smarty->assign('pageSlug', $pageSlug);
-
 $smarty->assign('pageTitle', get_the_title($page_id));
 
 $smarty->assign('themeURL', THEME_URI);

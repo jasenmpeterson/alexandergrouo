@@ -36,8 +36,6 @@ require(['scroll_down'], function (scroll_down) {
 require(['mobile_menu'], function (mobile_menu) {
     mobile_menu()
 });
-// gmaps :
-require(['gmaps']);
 // locations :
 require(['locations'], function (locations) {
     locations()

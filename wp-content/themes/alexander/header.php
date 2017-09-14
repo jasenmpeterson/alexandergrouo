@@ -43,7 +43,10 @@
                 <div></div>
             </section>
         </div>
-        <div class="col-xs-3 social--media--container">
+        <div class="col-xs-3 search--results--container">
+		    <?php get_search_form(); ?>
+        </div>
+        <div class="col-xs-2 social--media--container">
 	        <?php get_template_part('components/social_media'); ?>
         </div>
     </header>

@@ -28,18 +28,19 @@
     <div class="col-lg-7 col-md-7 col-sm-12">
         {foreach $locations as $addresses name=addresses}
             <section class="locations--map--container box {if $smarty.foreach.addresses.iteration == 1}active{/if}" data-location-id="{$addresses.location|replace:' ':''}">
-                <section class="circular--map acf-map">
-                    <div class="marker" data-lat="{$addresses.map.lat}" data-lng="{$addresses.map.lng}"></div>
-                </section>
+                <section class="circular--map" style="background: url({$addresses.skyline_image.url})"></section>
                 <section class="locations--addresses">
                     <div class="box">
                         <section class="address">
-                            <h2>{$addresses.addresses[0].street}</h2>
-                            <h1>{$addresses.addresses[0].location}</h1>
+                            <a href="https://www.google.com/maps/search/?api=1&query={$addresses.addresses[0].street|replace:' ':'+'} {$addresses.addresses[0].location|replace:' ':'+'}" target="_blank">
+                                <h2>{$addresses.addresses[0].street}</h2>
+                                <h1>{$addresses.addresses[0].location}</h1>
+                            </a>
                         </section>
                         <section class="phone">
                             {foreach $addresses.addresses[0]['phone'] as $phone name=phone }
-                                <h1>{$phone['number']}</h1>
+                                {assign "phone_number" {$phone['number']|replace:'T ':''}}
+                                <h1><a href="tel:{$phone_number}">{$phone['number']}</a></h1>
                             {/foreach}
                         </section>
                     </div>

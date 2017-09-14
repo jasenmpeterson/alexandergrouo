@@ -1,0 +1,43 @@
+.searchform {
+  padding: 25px 0 0 0;
+  position: relative;
+}
+.searchform .submit {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.searchform input {
+  margin: 0;
+  height: 2.5rem;
+}
+.searchform .field {
+  padding-right: 105px;
+}
+.search--results {
+  width: 1170px;
+  max-width: 100%;
+  margin: 200px auto;
+  padding: 0 30px;
+}
+.search--results h1 {
+  color: $baby--blue;
+}
+.search--results ul {
+  list-style-type: none;
+}
+.search--results ul li {
+  padding: 50px 0;
+  margin-left: 0;
+  border-bottom: 1px solid rgba(154, 154, 154, .2);
+}
+.search--results .button--default .line {
+  background-color: rgba(154, 154, 154, .2);
+  width: 15%;
+}
+.search--results a {
+  text-decoration: none;
+}

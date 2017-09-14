@@ -36,11 +36,6 @@
 .about--us--content p {
   color: $gun--metal;
 }
-.about--us--title.box,
-.about--us--content.box {
-  padding-top: 110px;
-  padding-bottom: 110px;
-}
 .row.search-types {
   margin-left: -100px;
 }
@@ -61,7 +56,51 @@
 .search-types .box:last-of-type {
   padding-bottom: 70px;
 }
-
+.stats--background--image--wrap {
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  position: relative;
+}
+.expertise--stat {
+  padding: 250px 60px;
+  position: relative;
+  color: $white;
+}
+.expertise--stat h1 {
+  font-size: 3em;
+}
+.expertise--background--image--wrap {
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  position: relative;
+}
+header ~ .about--video--wrapper--container {
+  margin-top: 0;
+}
+.about--box,
+.content--box {
+  padding: 5rem;
+}
+.about--box h1,
+.about--box h2 {
+  color: $baby--blue;
+}
+.about--box p {
+  color: $gun--metal;
+}
+.silver--content p {
+  color: $dark--gray;
+}
+.content--image--block {
+  height: 600px;
+  width: 100%;
+}
+@media screen and (max-width: 425px) {
+  .about--box,
+  .content--box {
+    padding: 2rem;
+  }
+}
 @media screen and (min-width: 20rem) {
   .box.list ul {
     display: block;

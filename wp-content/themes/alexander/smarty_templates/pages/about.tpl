@@ -1,4 +1,24 @@
-<section class="video--wrapper--container">
+<section class="expertise--background--image--wrap" style="background: url({$stats_image})">
+    <section class="row">
+        <div class="col-xs">
+            <div class="box expertise--title">
+                <h2>{$stats_title}</h2>
+            </div>
+        </div>
+    </section>
+    <div class="row expertise--stats center-xs">
+        {foreach $stats as $stat}
+            <div class="col-md-3 col-sm-12">
+                <section class="expertise--stat">
+                    <h1>{$stat['label']}</h1>
+                    {$stat['content']}
+                </section>
+            </div>
+        {/foreach}
+    </div>
+</section>
+
+<section class="video--wrapper--container about--video--wrapper--container">
     <div class="about--page--video--wrapper video--wrapper js--video--wrapper">
         <iframe class="video--iframe js--video--iframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="{$about_us_video}"></iframe>
         <button class="video--poster" style="background:url({$about_us_video_poster});">
@@ -7,44 +27,59 @@
     </div>
 </section>
 
-<section class="about--us--container row">
-    <section class="col-sm-1 col-md-4 silver"></section>
-    <section class="col-sm-12 col-md-7">
-        <div class="row middle-xs">
-            <section class="col-xs">
+<section class="page--banner--image--container content--image--block">
+    <section class="page--banner--image" style="background: url({$content_block_image_three})"></section>
+</section>
 
-                <div class="row middle-xs box--shadow--all">
-                    <section class="col-md-6 col-sm-12">
-                        <div class="box about--us--title">
-                            <h1>{$about_us_title}</h1>
-                        </div>
-                    </section>
-                    <section class="col-md-6 col-sm-12">
-                        <div class="box about--us--content">
-                            {$about_us_content}
-                        </div>
-                    </section>
-                </div>
+<div class="row">
+    <div class="col-md-3 col-sm-1 silver"></div>
+    <div class="col-md-6 col-sm-10 box--shadow--all">
+        <div class="box about--box">
+            {$content_block}
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-1 dark--gray"></div>
+</div>
 
-                <div class="row search-types">
-                    <section class="col-sm-12 col-md-9 dark--gray box--shadow--left">
-                        {foreach $searches as $search}
-                            <div class="box">
-                                <h1>{$search['label']}</h1>
-                                {$search['content']}
-                            </div>
-                        {/foreach}
-                    </section>
-                    <section class="col-sm-12 col-md-3 page--banner--image--container">
-                        <section class="page--banner--image about--page--image" style="background: url({$featured_image})"></section>
-                    </section>
-                </div>
-
+<div class="row">
+    <div class="col-md-6 col-sm-12 baby--blue">
+        <div class="row">
+            <section class="page--banner--image--container content--image--block content--image--block--one">
+                <section class="page--banner--image" style="background: url({$content_block_image})"></section>
             </section>
         </div>
-    </section>
-    <section class="col-xs-1 dark--blue"></section>
-</section>
+        <div class="row">
+            <div class="col-sm">
+                <div class="box content--box">
+                    {$content_block_three}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12 silver">
+        <div class="row">
+            <div class="col-sm">
+                <div class="box content--box silver--content">
+                    {$content_block_two}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <section class="page--banner--image--container content--image--block content--image--block--one">
+                <section class="page--banner--image" style="background: url({$content_block_image_two})"></section>
+            </section>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 col-sm-12">
+        <div class="box about--box">
+            {$content_block_four}
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12 silver"></div>
+</div>
 
 <section class="our--culture--container">
     <section class="video--wrapper--container">

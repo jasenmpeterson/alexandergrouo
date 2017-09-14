@@ -13,7 +13,12 @@
     *  @return	n/a
     */
 
+    google.maps.visualRefresh = true
+
+    $bounds_array = [];
+
     function new_map( $el ) {
+
 
         // var
         var $markers = $el.find('.marker');
@@ -121,6 +126,8 @@
         // vars
         var bounds = new google.maps.LatLngBounds();
 
+        $bounds_array.push(bounds)
+
         // loop through all markers and create bounds
         $.each( map.markers, function( i, marker ){
 
@@ -168,6 +175,16 @@
             map = new_map( $(this) );
 
         });
+
+        // $('.locations--container').on('click', function() {
+        //     console.log($bounds_array)
+        //     $.each($bounds_array, function( index, value ) {
+        //         $latitude = value['b']['b']
+        //         $longitude = value['f']['b']
+        //         $current_map = $('.locations--container .acf-map')
+        //         $current_map.setCenter({lat:$latitude, lng:$longitude})
+        //     });
+        // })
 
     });
 

@@ -41,62 +41,71 @@
     <div class="col-xs-1 dark--blue"></div>
     <div class="col-xs">
         <div class="row center-xs">
-            <div class="col-md-6 col-sm-12">
-                <div class="box expertise--content--block">
-                    {$content_block_two}
-                </div>
-            </div>
+            <div class="col-md-6 col-sm-12"></div>
             <div class="col-md-6 col-sm-12">
                 <div class="box expertise--content--block final--content--block box--shadow--all">
                     {$content_block_three}
                 </div>
-                <section class="page--banner--image--container">
-                    <section class="content--block--page--banner page--banner--image box--shadow--all" style="background: url({$content_block_image})"></section>
-                </section>
             </div>
         </div>
     </div>
     <div class="col-xs-1 silver"></div>
 </div>
 
-<section class="expertise--background--image--wrap" style="background: url({$expertise_image})">
-    <section class="row">
-        <div class="col-xs-1 dark--blue"></div>
-        <div class="col-xs">
-            <div class="box expertise--title">
-                <h2>{$experience_title}</h2>
+<section class="row search-types dark--gray">
+    <div class="col-md-1"></div>
+    <section class="col-sm-12 col-md-5 box--shadow--left">
+        {foreach $searches as $search}
+            <div class="box">
+                <h1>{$search['label']}</h1>
+                {$search['content']}
             </div>
-        </div>
+        {/foreach}
     </section>
-    <div class="row expertise--stats center-xs">
-        <div class="col-xs-1 dark--blue"></div>
-        <div class="col-xs">
-            <div class="row">
-                {foreach $experience_stats as $experience_stat}
-                    <div class="col-md-4 col-sm-12">
-                        <section class="expertise--stat">
-                            <h1>{$experience_stat['label']}</h1>
-                            {$experience_stat['content']}
-                        </section>
-                    </div>
-                {/foreach}
-            </div>
-        </div>
-    </div>
+    <section class="col-sm-12 col-md-5 dark--gray box--shadow--left" style="padding: 0;">
+        <section class="page--banner--image--container expertise--banner--image--container">
+            <section class="content--block--page--banner page--banner--image" style="background: url({$content_block_image})"></section>
+        </section>
+    </section>
+    <div class="col-md-1 col-sm-12 silver"></div>
 </section>
 
-<section class="expertise--content--blocks expertise--content--block--four row">
-    <div class="col-xs-1 dark--blue"></div>
-    <div class="col-md-6 col-sm-11">
-        <div class="box">
-            {$content_block_four}
+<div class="row dark--gray">
+    <div class="col-md-6 col-sm-12" style="padding: 0;">
+        <section class="page--banner--image--container expertise--banner--image--container">
+            <section class="content--block--page--banner page--banner--image" style="background: url({$services_image})"></section>
+        </section>
+    </div>
+    <div class="col-md-6 col-sm-12">
+        <div class="row industries--list services--list">
+            <div class="col-xs">
+                <div class="box expertise--content--block--x-padding">
+                    <h2>{$industries_title} &ndash;</h2>
+                    {foreach $services as $service}
+                        {if $service['label'][0]->slug == 'industry'}
+                            <a href="{$service['link']}" class="button--default">
+                                <span>{$service['title']}</span>
+                                <div class="line"></div>
+                            </a>
+                        {/if}
+                    {/foreach}
+                </div>
+            </div>
         </div>
-        <div class="box">
-            {$content_block_five}
-        </div>
-        <div class="box">
-            {$content_block_six}
+        <div class="row functions--list services--list">
+            <div class="col-xs">
+                <div class="box expertise--content--block--x-padding">
+                    <h2>{$functions_title} &ndash;</h2>
+                    {foreach $services as $service}
+                        {if $service['label'][0]->slug == 'function'}
+                            <a href="{$service['link']}" class="button--default">
+                                <span>{$service['title']}</span>
+                                <div class="line"></div>
+                            </a>
+                        {/if}
+                    {/foreach}
+                </div>
+            </div>
         </div>
     </div>
-    <div class="col-md-5 col-sm-1 silver""></div>
-</section>
+</div>

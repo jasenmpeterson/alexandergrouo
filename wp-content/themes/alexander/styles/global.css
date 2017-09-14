@@ -2906,7 +2906,7 @@ header .logo a {
 header .social--media-icons {
   padding-top: 35px; }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1092px) {
   header .nav-inline {
     display: none; }
 
@@ -2926,7 +2926,10 @@ header .social--media-icons {
     display: none; }
 
   header .logo {
-    text-align: left; } }
+    text-align: left; }
+
+  .search--results--container {
+    display: none; } }
 .nav-inline .primary {
   text-align: center;
   padding-top: 35px; }
@@ -3054,6 +3057,12 @@ header .social--media-icons {
     transform: translateY(-0.375rem); }
   80% {
     transform: translateY(-0.375rem) rotate(-45deg); } }
+@media only screen and (max-width: 1360px) {
+  .nav-inline ul li {
+    padding: 0 5px; } }
+@media only screen and (max-width: 1230px) {
+  .nav-inline ul li a {
+    font-size: 1rem; } }
 footer {
   background-color: #1F242A;
   color: #FFFFFF;
@@ -3131,6 +3140,15 @@ footer .logo a {
 
 .social--media-icons ul li:after {
   display: none; }
+
+.nav-inline.social--media-icons {
+  text-align: center; }
+
+.social--media-icons ul {
+  display: inline-block; }
+
+.nav-inline.social--media-icons li {
+  padding: 0 5px; }
 
 a.button--default {
   font-size: .8rem;
@@ -3211,7 +3229,8 @@ a.button--default:last-child {
   text-decoration: none;
   padding: 15px 20px 15px 20px;
   background-color: #FFFFFF;
-  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1); }
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-bottom: 1px solid rgba(154, 154, 154, 0.1); }
 
 .post--list a h6 {
   color: #6CC8E9;
@@ -3286,6 +3305,49 @@ a.button--default:last-child {
   opacity: 1;
   display: block; }
 
+.searchform {
+  padding: 25px 0 0 0;
+  position: relative; }
+
+.searchform .submit {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
+
+.searchform input {
+  margin: 0;
+  height: 2.5rem; }
+
+.searchform .field {
+  padding-right: 105px; }
+
+.search--results {
+  width: 1170px;
+  max-width: 100%;
+  margin: 200px auto;
+  padding: 0 30px; }
+
+.search--results h1 {
+  color: #6CC8E9; }
+
+.search--results ul {
+  list-style-type: none; }
+
+.search--results ul li {
+  padding: 50px 0;
+  margin-left: 0;
+  border-bottom: 1px solid rgba(154, 154, 154, 0.2); }
+
+.search--results .button--default .line {
+  background-color: rgba(154, 154, 154, 0.2);
+  width: 15%; }
+
+.search--results a {
+  text-decoration: none; }
+
 .home--about--section .company--motto {
   min-height: 450px; }
 
@@ -3332,6 +3394,17 @@ a.button--default:last-child {
 
 .home--locations--section h1 {
   color: #6CC8E9; }
+
+.home--post--title.post--title a {
+  color: #6CC8E9;
+  background-color: transparent;
+  display: block;
+  padding: 0;
+  border: none;
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+.home--post--title.post--title a:hover {
+  color: #FFFFFF; }
 
 .home--locations--content .box {
   width: 85%;
@@ -3474,11 +3547,6 @@ a.button--default:last-child {
 .about--us--content p {
   color: #9A9A9A; }
 
-.about--us--title.box,
-.about--us--content.box {
-  padding-top: 110px;
-  padding-bottom: 110px; }
-
 .row.search-types {
   margin-left: -100px; }
 
@@ -3499,6 +3567,49 @@ a.button--default:last-child {
 .search-types .box:last-of-type {
   padding-bottom: 70px; }
 
+.stats--background--image--wrap {
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  position: relative; }
+
+.expertise--stat {
+  padding: 250px 60px;
+  position: relative;
+  color: #FFFFFF; }
+
+.expertise--stat h1 {
+  font-size: 3em; }
+
+.expertise--background--image--wrap {
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  position: relative; }
+
+header ~ .about--video--wrapper--container {
+  margin-top: 0; }
+
+.about--box,
+.content--box {
+  padding: 5rem; }
+
+.about--box h1,
+.about--box h2 {
+  color: #6CC8E9; }
+
+.about--box p {
+  color: #9A9A9A; }
+
+.silver--content p {
+  color: #1F242A; }
+
+.content--image--block {
+  height: 600px;
+  width: 100%; }
+
+@media screen and (max-width: 425px) {
+  .about--box,
+  .content--box {
+    padding: 2rem; } }
 @media screen and (min-width: 20rem) {
   .box.list ul {
     display: block; }
@@ -3617,6 +3728,12 @@ a.button--default:last-child {
     width: 90%;
     margin: 0 auto 35px auto; }
 
+  .leadership--profiles .profile--image {
+    height: 600px; }
+
+  .leadership--profiles .page--banner--image {
+    background-position: center top !important; }
+
   .box.list h1 {
     font-size: 1.8rem; }
 
@@ -3634,7 +3751,11 @@ a.button--default:last-child {
 
   .ajax--profile .page--banner--image--container {
     width: 100%;
-    height: 400px; } }
+    height: 400px; }
+
+  .experience--label {
+    text-align: left;
+    padding: 45px; } }
 .expertise--page--banner .dark--blue {
   height: 100%;
   z-index: 2; }
@@ -3645,7 +3766,8 @@ a.button--default:last-child {
   position: relative;
   z-index: 2; }
 
-.expertise--hero--text h1 {
+.expertise--hero--text h1,
+.expertise--hero--text p {
   color: #9A9A9A; }
 
 .expertise--hero--text h1 span {
@@ -3658,7 +3780,10 @@ a.button--default:last-child {
   color: #9A9A9A; }
 
 .expertise--row [class*="col-xs"] {
-  padding: 25px 0; }
+  padding: 0; }
+
+.expertise--banner--image--container {
+  height: 100%; }
 
 .expertise--row .box {
   text-align: left; }
@@ -3682,19 +3807,6 @@ a.button--default:last-child {
 
 .expertise--row .final--content--block h2 span {
   color: #6CC8E9; }
-
-.expertise--stat {
-  padding: 250px 60px;
-  position: relative;
-  color: #FFFFFF; }
-
-.expertise--stat h1 {
-  font-size: 3em; }
-
-.expertise--background--image--wrap {
-  -webkit-background-size: cover !important;
-  background-size: cover !important;
-  position: relative; }
 
 .expertise--title.box {
   position: relative;
@@ -3911,7 +4023,10 @@ a.button--default:last-child {
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  position: relative; }
+  position: relative;
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  background-position: center center !important; }
 
 .circular--map:after {
   position: absolute;
@@ -3928,6 +4043,17 @@ a.button--default:last-child {
 
 .locations--addresses {
   display: inline-block; }
+
+.locations--addresses a {
+  text-decoration: none; }
+
+.locations--addresses a *,
+.locations--addresses .phone h1 a {
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+.locations--addresses a:hover *,
+.locations--addresses .phone h1 a:hover {
+  opacity: .5; }
 
 .locations--addresses .box {
   text-align: left; }

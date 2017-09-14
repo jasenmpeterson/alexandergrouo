@@ -43,7 +43,7 @@
     <div class="col-sm-12 col-md-4 silver">
         <section class="box">
             <section class="post--list">
-                <section class="home--post--title post--title">Blog</section>
+                <section class="home--post--title post--title"><a href="{$homeURL}/blog">Blog</a></section>
                 {foreach $posts as $post}
                     <a href="{$post['link']}">
                         <h6>{$post['title']}</h6>
@@ -94,7 +94,7 @@
                         {/foreach}
                     </ul>
                     <a href="{$locations_link}" class="button--default button--reverse">
-                        <span>View all our locations</span>
+                        <span>View all locations</span>
                         <div class="line"></div>
                     </a>
                 </div>

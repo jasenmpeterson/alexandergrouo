@@ -1,12 +1,13 @@
 define(function () {
     return function () {
-
         const location_picker = document.querySelector('.locations--list')
         const location_button = document.querySelectorAll('.locations--container')
         const locations = document.querySelectorAll('.locations--map--container')
-        const maps = document.querySelectorAll('.acf-map')
+
 
         if (typeof (location_picker) != 'undefined' && location_picker != null) {
+
+
             // querySelectorAll returns a node list - need to loop through the list so the below applies to all .location_buttons
 
             for (var i = 0; i < location_button.length; i++) {
@@ -33,20 +34,12 @@ define(function () {
 
                     for (var i = 0; i < locations.length; i++) {
                         if (locations[i].getAttribute('data-location-id') == location_id) {
+
                             locations[i].classList.add('active')
 
-                            // trigger map resize so it displays correctly when a new location is selected
-
-                            google.maps.event.trigger(maps[i], 'resize', function() {
-                                maps[i].setCenter(center)
-                            })
-                            google.maps.event.trigger(maps[i], 'update', function() {
-                                maps[i].setCenter(center)
-                            })
-
-                            console.log(google.maps)
                         }
                     }
+
 
                 })
             }

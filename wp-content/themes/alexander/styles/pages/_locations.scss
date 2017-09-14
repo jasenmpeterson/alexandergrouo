@@ -70,6 +70,9 @@
   height: 400px;
   border-radius: 50%;
   position: relative;
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  background-position: center center !important;
 }
 .circular--map:after {
   position: absolute;
@@ -86,6 +89,17 @@
 }
 .locations--addresses {
   display: inline-block;
+}
+.locations--addresses a {
+  text-decoration: none;
+}
+.locations--addresses a *,
+.locations--addresses .phone h1 a {
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.locations--addresses a:hover *,
+.locations--addresses .phone h1 a:hover {
+  opacity: .5;
 }
 .locations--addresses .box {
   text-align: left;

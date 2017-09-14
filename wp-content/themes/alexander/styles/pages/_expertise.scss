@@ -8,7 +8,8 @@
   position: relative;
   z-index: 2;
 }
-.expertise--hero--text h1 {
+.expertise--hero--text h1,
+.expertise--hero--text p {
   color: $gun--metal;
 }
 .expertise--hero--text h1 span {
@@ -21,7 +22,10 @@
   color: $gun--metal;
 }
 .expertise--row [class*="col-xs"] {
-  padding: 25px 0;
+  padding: 0;
+}
+.expertise--banner--image--container {
+  height: 100%;
 }
 .expertise--row .box {
   text-align: left;
@@ -45,19 +49,6 @@
 }
 .expertise--row .final--content--block h2 span {
   color: $baby--blue;
-}
-.expertise--stat {
-  padding: 250px 60px;
-  position: relative;
-  color: $white;
-}
-.expertise--stat h1 {
-  font-size: 3em;
-}
-.expertise--background--image--wrap {
-  -webkit-background-size: cover !important;
-  background-size: cover !important;
-  position: relative;
 }
 .expertise--title.box {
   position: relative;
@@ -83,7 +74,6 @@
 .expertise--content--blocks .box {
   padding: 0 60px 20px;
 }
-
 @media screen and (min-width: 320px) and (max-width: 1024px) {
   .expertise--hero--text h1 {
     font-size: 2rem;
