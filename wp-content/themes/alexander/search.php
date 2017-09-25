@@ -20,16 +20,18 @@ $pagination = new pagination_links();
 					<?php while ( have_posts() ) { the_post(); ?>
 
 						<li>
-							<h3>
-								<a href="<?php echo get_permalink(); ?>"><?php the_title();  ?></a>
-							</h3>
-							<section class="search--post--excerpt">
-								<p><?php echo substr(get_the_excerpt(), 0,200); ?></p>
-								<a href="<?php the_permalink();?>" class="button--default">
-									<span>Read More</span>
-									<div class="line"></div>
-								</a>
-							</section>
+                            <article class="box--shadow--all">
+                                <a href="<?php the_permalink();?>">
+                                    <div class="box">
+                                        <h3>
+	                                        <?php the_title();  ?>
+                                        </h3>
+                                        <section class="search--post--excerpt">
+                                            <p><?php echo strip_tags(substr(get_the_excerpt(), 0,200)); ?></p>
+                                        </section>
+                                    </div>
+                                </a>
+                            </article>
 						</li>
 
 					<?php } ?>
