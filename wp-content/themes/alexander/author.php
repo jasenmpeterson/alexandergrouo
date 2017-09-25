@@ -2,9 +2,8 @@
 /**
  * Created by IntelliJ IDEA.
  * User: jasenpeterson
- * Date: 9/5/17
- * Time: 7:51 AM
- * Template Name: Blog
+ * Date: 9/25/17
+ * Time: 9:29 AM
  */
 
 get_header();
@@ -12,19 +11,17 @@ get_header();
 $current_page = sanitize_post($GLOBALS['wp_the_query']->get_queried_object());
 
 $page_id = $current_page->ID;
+$author = $current_page->data->user_login;
+$author_id = $current_page->data->ID;
 
 global $smarty;
-
-use twitter_feed\twitter;
-$twitter = new twitter();
-$twitter->display_feed();
-$smarty->assign('twitter_feed', $twitter->content);
 
 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
 $post_args = array(
 	'post_type' => array('post','tag_news'),
 	'post_status' => 'publish',
+	'author' => $author_id,
 	'posts_per_page' => 6,
 	'paged' => $paged
 );
@@ -42,7 +39,6 @@ if( $tag_posts->have_posts() ) {
 			'link' => ( get_post_type() == 'tag_news' ) ? get_field('link') : '',
 			'media' => ( get_post_type() == 'tag_news' ) ? get_field('file_attachment') : '',
 			'author' => get_the_author(),
-			'author_link' => get_author_posts_url(get_the_author_meta('ID'))
 		);
 	}
 	wp_reset_postdata();
@@ -54,6 +50,8 @@ $smarty->assign('pagination',  $pagination);
 
 $smarty->assign('posts', $tag_posts_array );
 
-$smarty->display(THEME_DIR . '/smarty_templates/pages/blog.tpl');
+$smarty->assign('author_name', $author );
+
+$smarty->display(THEME_DIR . '/smarty_templates/pages/author.tpl');
 
 get_footer();

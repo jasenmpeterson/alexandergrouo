@@ -1,7 +1,9 @@
 .home--about--section .company--motto {
   min-height: 450px;
 }
-.home--page--banner h1,
+.home--page--banner h1 {
+  color: $baby--blue
+}
 .home--page--banner p {
   color: $white;
 }

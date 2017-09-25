@@ -16,12 +16,13 @@
                         {assign 'target' '_self'}
                     {/if}
 
-                    <div class="col-md-6 col-lg-5 col-sm-12">
+                    <div class="col-md-6 col-sm-12">
                         <article class="box--shadow--all">
                             <a href="{$link}" data-id="{$post.post_type}" target="{$target}" class="bg--image--container">
                                 <section class="page--banner--image" style="background: url('{$siteURL}/wp-content/uploads/2017/06/pexels-photo-136413.jpg')"></section>
                                 <section class="post--content">
                                     <h1>{$post.post_name}</h1>
+                                    <span class="post--author">{$post.author}</span>
                                     <span class="post--date">{$post.post_date}</span>
                                 </section>
                             </a>
@@ -36,7 +37,7 @@
             </div>
         </div>
         <div class="row standard--post center-xs">
-            <div class="col-md-6 post--container">
+            <div class="col-md-8  col-sm-12 post--container">
                 {foreach $posts as $post key=key}
                     {if $key > 1}
                         {if $post.link !== ''}
@@ -49,21 +50,28 @@
                             {assign 'link' {$post.post_link} }
                             {assign 'target' '_self'}
                         {/if}
-                        <article>
-                            <a href="{$link}" class="row box--shadow--all" target="{$target}">
-                                <div class="col-xs-3 post--image--container bg--image--container">
-                                    <section class="page--banner--image" style="background: url('{$siteURL}/wp-content/uploads/2017/06/pexels-photo-136413.jpg')"></section>
+                        <article class="box--shadow--all">
+                            <a href="{$link}"  target="{$target}">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-3 col-md-no-padding-right">
+                                        <div class="post--image--container bg--image--container">
+                                            <section class="page--banner--image" style="background: url('{$siteURL}/wp-content/uploads/2017/06/pexels-photo-136413.jpg')"></section>
+                                        </div>
+                                    </div>
+                                    <section class="col-md-9 col-sm-12 col-md-no-padding-left">
+                                        <div class="post--content">
+                                            <h1>{$post.post_name}</h1>
+                                            <span class="post--author">{$post.author}</span>
+                                            <span class="post--date">{$post.post_date}</span>
+                                        </div>
+                                    </section>
                                 </div>
-                                <section class="post--content col-xs-9">
-                                    <h1>{$post.post_name}</h1>
-                                    <span class="post--date">{$post.post_date}</span>
-                                </section>
                             </a>
                         </article>
                     {/if}
                 {/foreach}
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-12">
                 <section class="twitter--feed box box--shadow--all">
                     {foreach $twitter_feed as $feed name=twitterloop}
                         {if $smarty.foreach.twitterloop.iteration == 1}

@@ -92,18 +92,22 @@
     </section>
     <div class="row our--culture--quote">
         <div class="col-xs-1 dark--blue"></div>
-        <div class="col-md-4 col-sm-10 dark--gray">
+        <div class="col-md-4 col-sm-12 dark--gray">
             <div class="box">
                 {$our_culture_quote}
             </div>
         </div>
-        <div class="col-sm-1 col-md-7 baby--blue"></div>
+        <div class="col-sm-12 col-md-7 baby--blue">
+            <div class="box">
+                {$our_culture_content}
+            </div>
+        </div>
     </div>
     <div class="row our--culture--content">
         <div class="col-xs-1"></div>
         <div class="col-sm-12 col-md-6">
             <div class="box">
-                {$our_culture_content}
+                {$content_block_five}
             </div>
         </div>
     </div>

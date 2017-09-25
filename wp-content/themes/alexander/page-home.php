@@ -38,7 +38,6 @@ $locations_link = get_permalink($locations_content_id);
 $post_list_args = array(
 	'post_type' => 'post',
 	'post_status' => 'publish',
-	'order'   => 'ASC',
 	'posts_per_page'=> 3
 );
 $post_list_array;
@@ -49,7 +48,7 @@ if( $post_list->have_posts() ) {
 		$post_list_array[get_the_ID()] = array(
 			'link'=> get_permalink(),
 			'title'=> get_the_title(),
-			'content'=> get_the_excerpt()
+			'content'=> strip_tags(get_the_excerpt())
 		);
 	}
 

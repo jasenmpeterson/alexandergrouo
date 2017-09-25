@@ -16,7 +16,7 @@ $dark--gray: #1F242A;
 $dark--blue: #088dc4;
 $baby--blue: #6CC8E9;
 $silver: #D7E2EB;
-$gun--metal: #9A9A9A;
+$gun--metal: #6d6d6d;
 $white: #FFFFFF;
 
 // background colors :
@@ -89,6 +89,7 @@ $white: #FFFFFF;
 @import "pages/services";
 @import "pages/locations";
 @import "pages/blog";
+@import "pages/author";
 
 body {
   overflow-x: hidden;

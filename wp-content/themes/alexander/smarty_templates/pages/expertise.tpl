@@ -57,7 +57,12 @@
     <section class="col-sm-12 col-md-5 box--shadow--left">
         {foreach $searches as $search}
             <div class="box">
-                <h1>{$search['label']}</h1>
+                <h1>
+                    {if !empty($search['page_link'])}<a href="{$search['page_link']}">{$search['label']}</a>
+                        {else}
+                        {$search['label']}
+                    {/if}
+                </h1>
                 {$search['content']}
             </div>
         {/foreach}

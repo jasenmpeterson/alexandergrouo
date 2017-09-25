@@ -10,6 +10,7 @@
                     <section class="page--banner--image" style="background: url('{$siteURL}/wp-content/uploads/2017/06/pexels-photo-136413.jpg')">
                         <section class="single--post--title baby--blue--gradient">
                             <h1>{$page_title}</h1>
+                            <span class="post--author"><a href="{$post_author_link}">Published by: {$post_author}</a></span>
                             <span class="post--date">Published on: {$post_date}</span>
                         </section>
                     </section>

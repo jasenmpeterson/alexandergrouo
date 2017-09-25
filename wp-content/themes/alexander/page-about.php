@@ -46,6 +46,7 @@ $smarty->assign('content_block', get_field('content_block', $page_id));
 $smarty->assign('content_block_two', get_field('content_block_two', $page_id));
 $smarty->assign('content_block_three', get_field('content_block_three', $page_id));
 $smarty->assign('content_block_four', get_field('content_block_four', $page_id));
+$smarty->assign('content_block_five', get_field('content_block_five', $page_id));
 $smarty->assign('content_block_image', get_field('content_block_image', $page_id));
 $smarty->assign('content_block_image_two', get_field('content_block_image_two', $page_id));
 $smarty->assign('content_block_image_three', get_field('content_block_image_three', $page_id));
